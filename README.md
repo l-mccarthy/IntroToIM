@@ -1,3 +1,3 @@
 # IntroToIM
 
-![picture]{test.png}
+![picture](test.png)
