@@ -1,1 +1,3 @@
 # IntroToIM
+
+![picture]{test.png}
