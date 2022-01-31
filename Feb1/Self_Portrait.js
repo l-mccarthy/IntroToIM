@@ -1,6 +1,9 @@
 function setup() {
+  //Same dimensions of reference photo
   createCanvas(433, 577);
+  //Background colour to simulate shadow
   background(81,50,29);
+  //Disable stroke for all
   noStroke();
   
   fill(0);
@@ -146,6 +149,7 @@ function setup() {
   rect(68,371,15,60);
   rect(79,410,10,35);
 }
+
 function draw() {
   print(mouseX,mouseY);
 }
