@@ -1,17 +1,21 @@
 // Global variables
-let redValue = 255
-let greenValue = 255
+let redValue = 255;
+let greenValue = 255;
 
 function setup() {
   createCanvas(720, 700);
-  
+
   // 'For' loops regarding x and y of lines
-  for (let linesXPos = 0;
-       linesXPos < width;
-       linesXPos = linesXPos + random(80, 150)) {
-    for (let linesYPos = 0;
-       linesYPos < height;
-       linesYPos = linesYPos + random(80, 150)) {
+  for (
+    let linesXPos = 0;
+    linesXPos < width;
+    linesXPos = linesXPos + random(80, 150)
+  ) {
+    for (
+      let linesYPos = 0;
+      linesYPos < height;
+      linesYPos = linesYPos + random(80, 150)
+    ) {
       drawLinesAt(linesXPos, linesYPos);
     }
   }
@@ -19,11 +23,10 @@ function setup() {
 
 // 'Draw' function for animating background colour
 function draw() {
-  
   // Change the value of red
   if (redValue == 0) redValue = 255;
   redValue -= 1;
-  
+
   // Change the value of green
   if (greenValue == 0) greenValue = 255;
   greenValue -= 1;
@@ -33,16 +36,16 @@ function draw() {
   // Select opacity for background
   rectColour.setAlpha(2);
   fill(rectColour);
-  noStroke()
+  noStroke();
   // Draw background as rectangle encompassing the canvas
-  rect(0, 0, 720, 700)
-} 
+  rect(0, 0, 720, 700);
+}
 
 // Function of temporary variables on where to put lines
 function drawLinesAt(x, y) {
-  strokeWeight(5)
+  strokeWeight(5);
   // Top 'shadow' line
-  stroke(0)
+  stroke(0);
   line(x + 25, y + 20, x + 80, y + 20);
   // Middle right line
   stroke(126);
