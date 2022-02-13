@@ -4,12 +4,9 @@
 
 ## Reflection
 
-In the beginning I wanted to create an interesting shape which I would then multiply across the x and y of the canvas using a 'for' loop, and to do that I opted with using lines to outline a shape rather than a simple 'rect' or 'ellipse'. I found that lines are very versatile as you can change the stroke weight and colour in order to simulate an illusion of 3D via light and shadow. As a result, I had each of the three lines correspond with a value in the grayscale in relation to where I wanted the imaginary light to come from. Additionally, there is no fourth line, despite the shape's square look, the viewer "fills in the blanks" in order to heighten the bevelled look.
+In the beginning I wanted to create an interesting shape which I would then multiply across the x and y of the canvas using a 'for' loop. To do that I opted with using lines to outline a shape rather than a simple 'rect' or 'ellipse'. While I was originally thinking of layering multiple shapes to make one complex shape, I found that lines are very versatile as you can change the stroke weight and colour in order to simulate an illusion of 3D via light and shadow. As a result, I had each of the three lines correspond with a value in the grayscale (0, 126, and 255) in relation to where I wanted the imaginary light to come from:
 
 ```
-// Function of temporary variables on where to put lines
-function drawLinesAt(x, y) {
-  strokeWeight(5)
   // Top 'shadow' line
   stroke(0)
   line(x + 25, y + 20, x + 80, y + 20);
@@ -19,10 +16,11 @@ function drawLinesAt(x, y) {
   // Bottom 'light' line
   stroke(255);
   line(x + 80, y + 75, x + 25, y + 75);
-}
 ```
 
-However, I felt the artwork was too monotonous and orderly, and I also remembered Casey Reas’ talk on chance operations where he mentioned how such artwork can benefit from emulating the chaos of nature. Consequently, I added random variables in the loop to each x and y position, row and column, instead of having the shapes translate by the same increment every time. Still I didn't feel like I had the artwork fulfill my purpose yet as it felt too static, despite the refreshing randomisation. So, I opted to include some simple animation, and a way to create the illusion of moving light and shadow was to change the background colour's lightness. Yet, I ran into the problem of having the background being over my shapes as it was not in the 'setup' function unlike my shapes, but I also realised I could not animate if was not in the 'draw' function. Thus, I had to deal with the background literally being over my shapes, but by dialling down on the background colour's opacity I was able to achieve a happy balance of the changing colour and visibility of my shapes to create an evolving artwork.
+Additionally, an intersting thing I realised was I did not need a fourth line to complete the square shape. That despite the shape's square look, the viewer "fills in the blanks" in order to heighten the bevelled look - creating "illusory contours" much like the infamous Kanizsa triangle.
+
+However, I felt the artwork was too monotonous and orderly, and I also remembered Casey Reas’ talk on chance operations where he mentioned how such artwork can benefit from emulating the chaos of nature. Consequently, I added random variables in the loop to each x and y position, row and column, instead of having the shapes translate by the same increment every time. Still I didn't feel like I had the artwork fulfill my purpose yet as it felt too static, despite the refreshing randomisation. So, I opted to include some simple animation, and a way to create the illusion of moving light and shadow was to change the background colour's lightness. Yet, I ran into the problem of having the background being over my shapes as it was not in the 'setup' function unlike my shapes, but I also realised I could not animate if the code was not in the 'draw' function. Thus, I had to deal with the background literally being over my shapes, but by dialling down on the background colour's opacity uisng .setAlpha:
 
 ```
  // Select the fill for background
@@ -30,7 +28,8 @@ However, I felt the artwork was too monotonous and orderly, and I also remembere
   // Select opacity for background
   rectColour.setAlpha(2);
   fill(rectColour);
-  noStroke()
-  // Draw background as rectangle encompassing the canvas
-  rect(0, 0, 720, 700)
 ```
+
+I was able to achieve a happy balance of the changing colour and visibility of my shapes to create an evolving artwork.
+
+
