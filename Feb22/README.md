@@ -31,7 +31,7 @@ Another issue I ran into was dealing with the large amount of data I had. I coul
     pop();
 ```
 
-Furthermore, I would have liked to add a function to make the user somehow scroll across my ratings but I tried using translations and it only increased the distance between the rectangles. In the end, I just stretched the canvas to be long enough to fit every rating and scroll using the scrolling bar that is built into the p5.js website, not in my program. Unfortunately, this means, as an entire image, my data visualization is very, very long.
+Furthermore, I would have liked to add a function to make the user somehow scroll across my ratings but I tried using translations and it only increased the distance between the rectangles. In the end, I just stretched the canvas to be long enough to fit every rating and scroll using the scrolling bar that is built into the p5.js website, not in my program. Unfortunately, this means that, as an entire image, my data visualization is very, very long.
 
 ```
 function setup() {
