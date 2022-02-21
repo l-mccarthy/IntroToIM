@@ -38,3 +38,12 @@ function setup() {
   // Large x value to accommodate long data table
   createCanvas(30000, 600);
 ```
+
+Still, I thought it was a little boring to look at, so I went looking on the internet to see some examples and tutorials of how to add some movement to my data visualization. On an engineering education blog (https://www.section.io/engineering-education/getting-started-with-data-visualization-using-p5js/), I found this simple if loop where I can animate my bar graphs growing so I chose to implement it and created a global variable to include in the dimensions of both the rectangle and text.
+
+```
+// if loop to animate the data bars "growing"
+  if (growAnimation < 40) {
+    growAnimation = growAnimation + 1;
+  }
+```
