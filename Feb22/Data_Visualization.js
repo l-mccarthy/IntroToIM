@@ -23,6 +23,7 @@ function draw() {
 
   for (let i = 0; i < myRating.length; i++) {
     // Data bars
+    // Colour of yellow similar to the IMDB yellow
     fill(210, 190, 0);
     // Height of each value based on the number each component represents
     rect(i * 40, height, 40, -myRating[i] * growAnimation);
