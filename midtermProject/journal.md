@@ -34,4 +34,16 @@ Why not have the player play as the fox? The fox will chase the chicken across t
 
 ### Test programs
 
+_Test programs will be attached as .js files in the midtermProject folder._
 
+It was difficult to think about what a new level would be defined as, as well as how I would go about doing so in code. I realised I had to think more like a computer and come up with the simplest way to portray such a progression. Below is the function I created to make it look like the game has advanced a level and gives the player the illusion of an endless game, while I am really just resetting the fox's and chicken's positions, making it look like the fox has crossed the border of the first level into the next. The createLevel function is then implemented in the draw function. Later on I will also be adding a section in this function where I generate new obstacles.
+
+```
+function createLevel() {
+  if (foxY == 0) {
+    foxY = 500;
+    chickenY = 200;
+    level++;
+    if (level > highscore) {
+      highscore = level;
+```
