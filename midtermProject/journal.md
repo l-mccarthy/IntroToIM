@@ -17,7 +17,13 @@ _She was chasing the chicken._
 
 Why not have the player play as the fox? The fox will chase the chicken across this treacherous road and the game ends when the fox catches the chicken. Thus, giving the game a greater objective than simply getting as high a score as possible. However, I am yet to decide if this is the direction I want to go - if the running chicken is part of the game or simply a "carrot and stick" mechanism. Regardless, I will be implementing the high score element whether or not I will need it in the final project, we'll see. In addition, I will obviously have obstacles in the game, likely cars, but I am not sure if I will also have the logs obstacle (the player will cross a body of water on moving logs) as seen in "Frogger" since it seems too complex for me to wrap my head around and code.
 
-### Risky/Complex/Unknown part(s) of my project
+### Risky/complex/unknown part(s) of my project
 
-* 
+* Resetting/creating a new level.
+* Keeping track of score.
 * Finding a way to restart the game without closing and restarting the program.
+* Creating the moving cars.
+* Have any collision with a car end the game.
+
+### How I plan to/have solved these parts
+
