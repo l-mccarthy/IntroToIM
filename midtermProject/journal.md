@@ -27,3 +27,11 @@ Why not have the player play as the fox? The fox will chase the chicken across t
 
 ### How I plan to/have solved these parts
 
+* I will create a function that resets the position of all the shapes in my program (the fox and chicken at the moment), along with adding a number to the "level" counter which will be displayed as text.
+* Keeping track of and adding a score count will be solved in tandem the new level function because in my game advancing to the next level will increase your score count by one. There will be an if statement to track and renew a highscore, each number being displayed so that it doesn't interfere with the game mechanics - so likely on the top corners.
+* The "restart" will occur when a key gets pressed within the keyPressed function (alongside the arrow keys for movement) and it will bring every shape back to its starting position as well as the level/score count back to zero. I also might want to include a button, likely the escape key, which will bring the user back to the main menu/instructions screen, thereby not only restarting the game.
+* _How I plan to solve the rest is to be determined_ (WIP: Obstacles will be an array; obstacles will be faster the higher the level; collision detection using if statements, an endGame function)
+
+### Test programs
+
+
