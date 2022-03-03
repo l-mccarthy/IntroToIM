@@ -2,7 +2,7 @@
 
 ### Initial concept for the project
 
-Everyone has heard the age old "why the chicken crossed the road" joke many times, as well as its countless variations. In fact, a game developer called Hipster Whale made a mobile game back in 2014 called "Crossy Road" that plays with this joke, making a chicken cross an endless amount of roads without being flattened by a speeding vehicle. The game was a smash hit and dominated app stores.
+Everyone has heard the age old "why the chicken crossed the road" joke many times, as well as its countless variations. In fact, a game developer called Hipster Whale made a mobile game back in 2014 called "Crossy Road" that plays with this joke, making a chicken cross an endless amount of roads without being flattened by a speeding vehicle. Movement mechanics are simple: the player must tap to go forward or swipe the screen in the appropriate direction to move the character horizontally or backwards. The game was a smash hit and dominated app stores on iOS and Android.
 
 ![Crossy Road](https://github.com/l-mccarthy/IntroToIM/blob/main/midtermProject/Media/crossy_road.jpg)
 
