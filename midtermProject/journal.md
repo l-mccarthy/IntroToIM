@@ -13,7 +13,7 @@ However, the main concept of the game has been done before, back in 1981 with an
 As a result, I plan to take this concept and create my own spin on it in p5.js. I wanted to continue with the chicken-crossing-the-road motif established by "Crossy Road" and I remembered a certain variation of the joke:
 
 _Why did the fox cross the road?_
-_She was chasing the chicken._
+_It was chasing the chicken._
 
 Why not have the player play as the fox? The fox will chase the chicken across this treacherous road and the game ends when the fox catches the chicken. Thus, giving the game a greater objective than simply getting as high a score as possible. However, I am yet to decide if this is the direction I want to go - if the running chicken is part of the game or simply a "carrot and stick" mechanism. Regardless, I will be implementing the high score element whether or not I will need it in the final project, we'll see. In addition, I will obviously have obstacles in the game, likely cars, but I am not sure if I will also have the logs obstacle (the player will cross a body of water on moving logs) as seen in "Frogger" since it seems too complex for me to wrap my head around and code.
 
