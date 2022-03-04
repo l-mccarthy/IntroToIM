@@ -62,7 +62,7 @@ function createLevel() {
 ```
 ![testLevel](https://github.com/l-mccarthy/IntroToIM/blob/main/midtermProject/Media/testLevel.gif)
 
-Next on my list of challenges was trying to find a way to restart the game while _in_ the game. I quickly realized I needed a keyPressed function for the player to interact with my game. Most notably are the arrow keys to move the fox avatar, this was achieved by simple if and else if statements, as well as nested if statements to create borders (the canvas edges) for the avatar. Of course, there is no border for the up arrow as the player needs to reach y = 0 to advance to the next level.
+Next on my list of challenges was trying to find a way to restart the game while _in_ the game. I quickly realized I needed a keyPressed function for the player to interact with my game. Most notably are the arrow keys to move the fox avatar, this was achieved by simple if and else if statements, as well as nested if statements to create borders (the canvas edges) for the avatar. Of course, there is no border for the up arrow as the player needs to reach y = 0 to advance to the next level. I needed a "restart" key and the backspace key aptly fitted the action I want the key to do when pressed.
 
 ```
 function keyPressed() {
@@ -81,12 +81,10 @@ function keyPressed() {
       foxY += foxIncrement;
     }
   } else if (keyCode === BACKSPACE) {
-    gameState = true;
     level = 0;
     foxX = 250;
     foxY = 400;
     chickenY = 200;
-    loop();
   }
 }
 ```
