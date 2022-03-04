@@ -98,6 +98,5 @@ function keyPressed() {
     foxX = 250;
     foxY = 400;
     chickenY = 200;
-    loop();
   }
 }
