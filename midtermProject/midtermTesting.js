@@ -16,7 +16,6 @@ let chickenIncrement = 3
 
 let level = 0;
 let highscore = 0;
-let gameState = true;
 
 function setup() {
   createCanvas(500, 500);
@@ -95,7 +94,6 @@ function keyPressed() {
       foxY += foxIncrement;
     }
   } else if (keyCode === BACKSPACE) {
-    gameState = true;
     level = 0;
     foxX = 250;
     foxY = 400;
