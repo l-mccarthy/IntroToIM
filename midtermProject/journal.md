@@ -24,6 +24,7 @@ Why not have the player play as the fox? The fox will chase the chicken across t
 * Resetting/creating a new level.
 * Keeping track of score.
 * Finding a way to restart the game without closing and restarting the program.
+* Implementing a starting screen with instructions and maybe a "Press [Enter] to try again" screen.
 * Creating the moving cars.
 * Have any collision with a car end the game.
 
@@ -34,7 +35,7 @@ Why not have the player play as the fox? The fox will chase the chicken across t
 * The "restart" will occur when a key gets pressed within the keyPressed function (alongside the arrow keys for movement) and it will bring every shape back to its starting position as well as the level/score count back to zero. I also might want to include a button, likely the escape key, which will bring the user back to the main menu/instructions screen, thereby not only restarting the game.
 * _How I plan to solve the rest is to be determined_ (WIP: Obstacles will be an array; obstacles will be faster the higher the level; collision detection using if statements, an endGame function)
 
-### Test programs
+### Testing
 
 _Test programs will be attached as .js files in the midtermProject folder._
 
@@ -57,3 +58,5 @@ function createLevel() {
   text(highscore, 460, 40);
 }
 ```
+
+Next on my list of challenges was trying to find a way to 
