@@ -39,6 +39,8 @@ Why not have the player play as the fox? The fox will chase the chicken across t
 
 _Test programs will be attached as .js files in the midtermProject folder._
 
+Firstly, designing the fox and chicken was the easiest part as I am comfortable with using shapes
+
 It was difficult to think about what a new level would be defined as, as well as how I would go about doing so in code. I realised I had to think more like a computer and come up with the simplest way to portray such a progression. Below is the function I created to make it look like the game has advanced a level and gives the player the illusion of an endless game, while I am really just resetting the fox's and chicken's positions, making it look like the fox has crossed the border of the first level into the next. The createLevel function is then implemented in the draw function. Later on I will also be adding a section in this function where I generate new obstacles. Plus, when creating a new "level" I added a score count which is then displayed on the canvas. Fortunately, there were no problems with this step so whatever plan I outlined in the bullet points above is essentially how I solved it.
 
 ```
@@ -58,5 +60,35 @@ function createLevel() {
   text(highscore, 460, 40);
 }
 ```
+![testLevel](https://github.com/l-mccarthy/IntroToIM/blob/main/midtermProject/Media/testLevel.gif)
 
 Next on my list of challenges was trying to find a way to 
+
+```
+function keyPressed() {
+  if (keyCode === LEFT_ARROW) {
+    if (foxX > 0) {
+      foxX -= foxIncrement;
+    }
+  } else if (keyCode === RIGHT_ARROW) {
+    if (foxX < 500) {
+      foxX += foxIncrement;
+    }
+  } else if (keyCode === UP_ARROW) {
+    foxY -= foxIncrement;
+  } else if (keyCode === DOWN_ARROW) {
+    if (foxY < 500) {
+      foxY += foxIncrement;
+    }
+  } else if (keyCode === BACKSPACE) {
+    gameState = true;
+    level = 0;
+    foxX = 250;
+    foxY = 400;
+    chickenY = 200;
+    loop();
+  }
+}
+```
+
+![testMovement](https://github.com/l-mccarthy/IntroToIM/blob/main/midtermProject/Media/testMovement.gif)
