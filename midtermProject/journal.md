@@ -24,9 +24,9 @@ Why not have the player play as the fox? The fox will chase the chicken across t
 * Resetting/creating a new level.
 * Keeping track of score.
 * Finding a way to restart the game without closing and restarting the program.
-* Implementing a starting screen with instructions and maybe a "Press [Enter] to try again" screen.
 * Creating the moving cars.
 * Have any collision with a car end the game.
+* Implementing a starting screen with instructions and maybe a "Press [Enter] to try again" screen.
 
 ### How I plan to/have solved these parts
 
@@ -37,7 +37,7 @@ Why not have the player play as the fox? The fox will chase the chicken across t
 
 ### Testing and Progress
 
-_Test programs will be attached as .js files in the midtermProject folder._
+_Test programs will be attached as .js files in the Testing folder._
 
 Firstly, designing the fox and chicken was the easiest part as I am comfortable with using shapes, so I will not go in detail. What I found most helpful and efficient was assigning global variables to the x, y, height, and width, of the main shape of these avatars and using divisions and multiplications of these values to construct corresponding shapes. As a result, changing the foxX or foxY variable for example will effect all shapes attributed to the fox. In addition, I did not need to use a function to display my mouse coordinates, which probably would have been more time consuming when making the shapes.
 
@@ -66,21 +66,21 @@ Next on my list of challenges was trying to find a way to restart the game while
 
 ```
 function keyPressed() {
-  if (keyCode === LEFT_ARROW) {
+  if (keyCode == LEFT_ARROW) {
     if (foxX > 0) {
       foxX -= foxIncrement;
     }
-  } else if (keyCode === RIGHT_ARROW) {
+  } else if (keyCode == RIGHT_ARROW) {
     if (foxX < 500) {
       foxX += foxIncrement;
     }
-  } else if (keyCode === UP_ARROW) {
+  } else if (keyCode == UP_ARROW) {
     foxY -= foxIncrement;
-  } else if (keyCode === DOWN_ARROW) {
+  } else if (keyCode == DOWN_ARROW) {
     if (foxY < 500) {
       foxY += foxIncrement;
     }
-  } else if (keyCode === BACKSPACE) {
+  } else if (keyCode == BACKSPACE) {
     level = 0;
     foxX = 250;
     foxY = 400;
@@ -90,3 +90,25 @@ function keyPressed() {
 ```
 
 ![testMovement](https://github.com/l-mccarthy/IntroToIM/blob/main/midtermProject/Media/testMovement.gif)
+
+The following challenge is creating the array of moving cars. I decided to make a separate p5.js test program to test this crucial aspect of my game. Fortunately, there was already a [similar example](https://editor.p5js.org/aaronsherwood/sketches/JO7e1p6aDr) provided by Prof. Aaron Sherwood where he demonstrated OOP by using cars that drove across the screen. As a result, I amalgamated his code to fit what I wanted, which suprisingly resulted in many deviations to the original. Although, the functions Prof. used _outside_ the class function were very useful, for instance, I am still not sure if I understand what "pushing to the array" is but I know how to use it because of this example's incorporation of it. A notable problem I solved was using randomisation in a Boolean manner to create an even split of cars moving from left to right, though I wonder if I could have used actual Boolean methods for this.
+
+```
+  if (random(2) < 1) {
+    this.posX = random(-250, 250);
+    this.direction = "right";
+  } else {
+    this.posX = random(250, 750);
+    this.direction = "left";
+  }
+```
+
+Another neat trick was equating the car's speed to the level count, whereby game difficulty increases as the player advances.
+
+```
+  this.carSpeed = level;
+```
+
+Currently, I am not bothered to worry about the aesthetics yet as the functionality of the code is paramount, which is why it does look a bit bland and nothing like a car.
+
+
