@@ -1,5 +1,7 @@
 # Midterm Project Journal
 
+_This journal will be edited and updated chronologically (i.e. some things I write will not match with later updates)_
+
 ### Initial concept for the project
 
 Everyone has heard the age old "why the chicken crossed the road" joke many times, as well as its countless variations. In fact, a game developer called Hipster Whale made a mobile game back in 2014 called "Crossy Road" that plays with this joke, making a chicken cross an endless amount of roads without being flattened by a speeding vehicle. Movement mechanics are simple: the player must tap to go forward or swipe the screen in the appropriate direction to move the character horizontally or backwards. The game was a smash hit and dominated app stores on iOS and Android.
@@ -36,7 +38,7 @@ Why not have the player play as the fox? The fox will chase the chicken across t
 
 _Test programs will be attached as .js files in the midtermProject folder._
 
-It was difficult to think about what a new level would be defined as, as well as how I would go about doing so in code. I realised I had to think more like a computer and come up with the simplest way to portray such a progression. Below is the function I created to make it look like the game has advanced a level and gives the player the illusion of an endless game, while I am really just resetting the fox's and chicken's positions, making it look like the fox has crossed the border of the first level into the next. The createLevel function is then implemented in the draw function. Later on I will also be adding a section in this function where I generate new obstacles.
+It was difficult to think about what a new level would be defined as, as well as how I would go about doing so in code. I realised I had to think more like a computer and come up with the simplest way to portray such a progression. Below is the function I created to make it look like the game has advanced a level and gives the player the illusion of an endless game, while I am really just resetting the fox's and chicken's positions, making it look like the fox has crossed the border of the first level into the next. The createLevel function is then implemented in the draw function. Later on I will also be adding a section in this function where I generate new obstacles. Plus, when creating a new "level" I added a score count which is then displayed on the canvas. Fortunately, there were no problems with this step so whatever plan I outlined in the bullet points above is essentially how I solved it.
 
 ```
 function createLevel() {
@@ -46,4 +48,12 @@ function createLevel() {
     level++;
     if (level > highscore) {
       highscore = level;
+    }
+  }
+  // level (left) and highscore (right) text
+  fill(255);
+  textSize(32);
+  text(level, 20, 40);
+  text(highscore, 460, 40);
+}
 ```
