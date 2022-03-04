@@ -35,11 +35,11 @@ Why not have the player play as the fox? The fox will chase the chicken across t
 * The "restart" will occur when a key gets pressed within the keyPressed function (alongside the arrow keys for movement) and it will bring every shape back to its starting position as well as the level/score count back to zero. I also might want to include a button, likely the escape key, which will bring the user back to the main menu/instructions screen, thereby not only restarting the game.
 * _How I plan to solve the rest is to be determined_ (WIP: Obstacles will be an array; obstacles will be faster the higher the level; collision detection using if statements, an endGame function)
 
-### Testing
+### Testing and Progress
 
 _Test programs will be attached as .js files in the midtermProject folder._
 
-Firstly, designing the fox and chicken was the easiest part as I am comfortable with using shapes
+Firstly, designing the fox and chicken was the easiest part as I am comfortable with using shapes, so I will not go in detail. What I found most helpful and efficient was assigning global variables to the x, y, height, and width, of the main shape of these avatars and using divisions and multiplications of these values to construct corresponding shapes. As a result, I did not need to use a function to display my mouse coordinates, which probably would have been more time consuming.
 
 It was difficult to think about what a new level would be defined as, as well as how I would go about doing so in code. I realised I had to think more like a computer and come up with the simplest way to portray such a progression. Below is the function I created to make it look like the game has advanced a level and gives the player the illusion of an endless game, while I am really just resetting the fox's and chicken's positions, making it look like the fox has crossed the border of the first level into the next. The createLevel function is then implemented in the draw function. Later on I will also be adding a section in this function where I generate new obstacles. Plus, when creating a new "level" I added a score count which is then displayed on the canvas. Fortunately, there were no problems with this step so whatever plan I outlined in the bullet points above is essentially how I solved it.
 
