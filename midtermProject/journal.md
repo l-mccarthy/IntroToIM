@@ -113,4 +113,23 @@ Currently, I am not bothered to worry about the aesthetics yet as the functional
 
 ![testCars](https://github.com/l-mccarthy/IntroToIM/blob/main/midtermProject/Media/testCars.gif)
 
+My final problem to solve was creating the starting screen. While the main menu should have instructions, be easy to navigate, and be aesthetically pleasing, this is not what I am worrying about. What I need to test is to somehow implement a function that waits until something is called for the game to start, and within this function the main menu will be displayed. Therefore, I created a variable called "gamemode" that when false calls the main menu function and when true, via a mouseClicked funciton, calls the functions relative to the actual game. In the test, it was simply an ellipse and background change. A simple but effective solution.
+
+```
+function draw() {
+  clear();
+  // if statement calls menu function first until gamemode is true
+  // this is possible because gamemode starts as false in setup
+  if (gamemode == false) {
+    menuScreen();
+  }
+  
+  // once gamemode becomes true (via mouseClicked) the game begins
+  // all functions related to the game are called
+  if (gamemode == true) {
+    playGame();
+  }
+}
+```
+
 ![testMenu](https://github.com/l-mccarthy/IntroToIM/blob/main/midtermProject/Media/testMenu.gif)
