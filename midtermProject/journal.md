@@ -113,7 +113,23 @@ Currently, I am not bothered to worry about the aesthetics yet as the functional
 
 ![testCars](https://github.com/l-mccarthy/IntroToIM/blob/main/midtermProject/Media/testCars.gif)
 
+Collision detection! Initially this was a lofty concept to grasp but it ended up having a fairly simple solution that used an if statement. This time, I was editing and testing directly into the main program. I made a collision checking function inside the car class that checks if the x and/or y coordinates of the player's fox match with or are within  that of a car's. If true, then it calls the gameStop function which ends the loop, thereby ending the game as nothing is moving, and I will add some text that prompts the player to restart the game. Plus, I also realized I had to make a function outside the class that performed the check for every car in the array, which I called "checkForCollision", that was added to the draw function. 
 
+```
+this.collision = function () {
+    // if statement stops the game if true
+    // checks if fox is on either edge of the car (x-axis)
+    // and if y positioning are equal
+    // possible because foxIncrement and carSpacingY are both 50
+    if (
+      foxX < this.posX + this.carWidth / 2 + foxWidth / 2 &&
+      foxX > this.posX - this.carWidth / 2 - foxWidth / 2 &&
+      this.posY == foxY
+    ) {
+      gameStop();
+    }
+  }
+```
 
 Although I had all the in-game mechanics finally figured out, my last problem to solve was creating the starting screen. While the main menu should have instructions, be easy to navigate, and be aesthetically pleasing, this is not what I am worrying about. What I need to test is to somehow implement a function that waits until something is called for the game to start, and within this function the main menu will be displayed. Therefore, I created a variable called "gamemode" that when false calls the main menu function and when true, via a mouseClicked funciton, calls the functions relative to the actual game. In the test, it was simply an ellipse and background change. A simple but effective solution.
 
@@ -136,4 +152,4 @@ function draw() {
 
 ![testMenu](https://github.com/l-mccarthy/IntroToIM/blob/main/midtermProject/Media/testMenu.gif)
 
-Later on, past the testing phase, elements like loading in sound and images were added to the project. These additions were much more simple than the rest of the project but still fun to play around with. While important, these elements have been best explained in the comments within the code as there is not much else to say about them.
+Later on, past the testing phase, elements like loading in sound and images were added to the project. These additions were much more simple than the rest of the project but still fun to play around with. While important, these elements have been best explained in the comments within the code as there is not much else to say about them. Soon, I will retrieve some feedback from user testing. I am very excited with how this project turned out! 
