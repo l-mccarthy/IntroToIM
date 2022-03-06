@@ -112,3 +112,5 @@ Another neat trick was equating the car's speed to the level count, whereby game
 Currently, I am not bothered to worry about the aesthetics yet as the functionality of the code is paramount, which is why it does look a bit bland and nothing like a car. Plus, I am not sure why the cars don't move on level one.
 
 ![testCars](https://github.com/l-mccarthy/IntroToIM/blob/main/midtermProject/Media/testCars.gif)
+
+![testMenu](https://github.com/l-mccarthy/IntroToIM/blob/main/midtermProject/Media/testMenu.gif)
