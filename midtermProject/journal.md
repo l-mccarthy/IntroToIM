@@ -113,7 +113,9 @@ Currently, I am not bothered to worry about the aesthetics yet as the functional
 
 ![testCars](https://github.com/l-mccarthy/IntroToIM/blob/main/midtermProject/Media/testCars.gif)
 
-My final problem to solve was creating the starting screen. While the main menu should have instructions, be easy to navigate, and be aesthetically pleasing, this is not what I am worrying about. What I need to test is to somehow implement a function that waits until something is called for the game to start, and within this function the main menu will be displayed. Therefore, I created a variable called "gamemode" that when false calls the main menu function and when true, via a mouseClicked funciton, calls the functions relative to the actual game. In the test, it was simply an ellipse and background change. A simple but effective solution.
+
+
+Although I had all the in-game mechanics finally figured out, my last problem to solve was creating the starting screen. While the main menu should have instructions, be easy to navigate, and be aesthetically pleasing, this is not what I am worrying about. What I need to test is to somehow implement a function that waits until something is called for the game to start, and within this function the main menu will be displayed. Therefore, I created a variable called "gamemode" that when false calls the main menu function and when true, via a mouseClicked funciton, calls the functions relative to the actual game. In the test, it was simply an ellipse and background change. A simple but effective solution.
 
 ```
 function draw() {
@@ -133,3 +135,5 @@ function draw() {
 ```
 
 ![testMenu](https://github.com/l-mccarthy/IntroToIM/blob/main/midtermProject/Media/testMenu.gif)
+
+Later on, past the testing phase, elements like loading in sound and images were added to the project. These additions were much more simple than the rest of the project but still fun to play around with. While important, these elements have been best explained in the comments within the code as there is not much else to say about them.
