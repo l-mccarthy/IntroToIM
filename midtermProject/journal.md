@@ -166,4 +166,6 @@ function draw() {
 
 #### Update #7
 
-Later on, past the testing phase, elements like loading in sound and images were added to the project. These additions were much more simple than the rest of the project but still fun to play around with. While important, these elements have been best explained in the comments within the code as there is not much else to say about them. Soon, I will retrieve some feedback from user testing. I am very excited with how this project turned out! 
+Later on, past the testing phase, elements like loading in sound and images were added to the project. These additions were much more simple than the rest of the project but still fun to play around with. While important, these elements have been best explained in the comments within the code as there is not much else to say about them. Soon, I will retrieve some feedback from user testing. I am very excited with how this project turned out!
+
+[Link to final project code](https://github.com/l-mccarthy/IntroToIM/blob/main/midtermProject/midtermProject.js)
