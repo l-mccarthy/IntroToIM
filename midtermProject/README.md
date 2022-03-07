@@ -3,8 +3,8 @@
 ![gameplay](https://github.com/l-mccarthy/IntroToIM/blob/main/midtermProject/Media/gameplay.gif)
 
 ### [Click here to access my project journal](https://github.com/l-mccarthy/IntroToIM/blob/main/midtermProject/journal.md)
-* Includes all my documentation and regular updates
-* 
+* Includes all my documentation with regular updates
+* Describes my concept, anticipated problems, and how I solved them
 
 ### [Click here to access final project code](https://github.com/l-mccarthy/IntroToIM/blob/main/midtermProject/midtermProject.js)
 * Includes detailed comments explaining the code
