@@ -27,7 +27,8 @@ https://user-images.githubusercontent.com/98512628/160930411-f43b2304-c438-4763-
 * Above is how I used insulation tape to keep the paperclip in place, I used a ruler to have the paperclip parallel to the wires.
 
 ### Problems and discoveries:
-* Depending on how short I let the delays for the blinking red LED be, the brighter the green LED shines. I have no idea why this happens. One time I used a full one-second delay and the green LED was just barely lit up, plus the red LED's brightness never changed either way.
+*  There were rare instances - around 1 out of 10 times - where I closed the drawer and the current did not flow (I imagine) because the red LED was still blinking. I am wondering if that is because a paper clip is not the best conductor, or that my wires could be connected in a better manner, or maybe the inslulating tape got in between the conductors.
+*  Depending on how short I let the delays for the blinking red LED be, the brighter the green LED shines. I have no idea why this happens. One time I used a full one-second delay and the green LED was just barely lit up, plus the red LED's brightness never changed either way.
 * The drawer could never close "fully", which is not good for realism and usability's sake but it works very well as a creative switch.
 * I accidently let the current not pass through a resistor during the circuit's early construction and it blew out an LED, there was even a pop sound and a very bright light for a millisecond.
 * If I were to add upon it later in the course, I might want to include a beeping sound whenever the drawer opens, in tandem with the red LED blinking.
