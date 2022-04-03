@@ -32,3 +32,4 @@ https://user-images.githubusercontent.com/98512628/160930411-f43b2304-c438-4763-
 * The drawer could never close "fully", which is not good for realism and usability's sake but it works very well as a creative switch.
 * I accidently let the current not pass through a resistor during the circuit's early construction and it blew out an LED, there was even a pop sound and a very bright light for a millisecond.
 * If I were to add upon it later in the course, I might want to include a beeping sound whenever the drawer opens, in tandem with the red LED blinking.
+* And while a study room drawer is not the most important/secure thing in a room, a real-life application of this circuit could be for storing valuable items, like in a safe box for example, so that the user will be assured that their item(s) is protected and the door is completely closed.
