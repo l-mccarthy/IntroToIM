@@ -19,8 +19,9 @@ https://user-images.githubusercontent.com/98512628/161628569-78e90983-ee06-4bae-
 
 * The idea came from brainstorming how lights are used in everyday objects to signify certain things. So, I then first thought about making an ordinary traffic light, but I could not completely figure out what I would use both sensors for as traffic lights are time based.
 * Similar to traffic lights are the racing track lights that count down for drivers until the green "GO!" light, which can be started and controlled by a person.
-* In terms of the actual wiring on the breadboard, I wanted to keep the circuit as tidy as I could, so I color coded the green LED to the green wire, the blue push-button to the blue wire, the LDR to the white wire, and both red LEDs to yellow wires since red is always connected to 5V.
-* 
+* In terms of the actual wiring on the breadboard, as seen in the image below, I wanted to keep the circuit as tidy as I could. Consequently, I color coded the green LED to the green wire, the blue push-button to the blue wire, the LDR to the white wire, and both red LEDs to yellow wires since the red wire is always connected to 5V.
+* Afterwards, I began coding how I will incorporate the sensors and the ways in which they control the three LEDs. Essentially, the code defines two states where certain LED functions are controlled by the analog (in state 0) and certain functions controlled by the digital (in state 1).
+* The reasoning for certain choices and variables in the code are outlined as comments within the .ino file.
 
 ![circuit](https://github.com/l-mccarthy/IntroToIM/blob/main/April5/Media/circuit.jpg)
 
