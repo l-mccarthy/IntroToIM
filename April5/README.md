@@ -2,8 +2,20 @@
 
 https://user-images.githubusercontent.com/98512628/161628569-78e90983-ee06-4bae-b6a7-79ba07dc75ad.mp4
 
+### Description:
+
+![button](https://github.com/l-mccarthy/IntroToIM/blob/main/April5/Media/button_pushed.JPG)
+
+### Schematic:
+
 ![schematic](https://github.com/l-mccarthy/IntroToIM/blob/main/April5/Media/schematic.JPG)
+
+### Process:
 
 ![circuit](https://github.com/l-mccarthy/IntroToIM/blob/main/April5/Media/circuit.jpg)
 
-![button](https://github.com/l-mccarthy/IntroToIM/blob/main/April5/Media/button_pushed.JPG)
+### Problems and Discoveries:
+
+* I think I have become more comfortable with using Arduino in that I did not run into any problems (compared to previous attempts where I blew out an LED) and that I was able to experiment and, most importantly, have fun with the code once I made the circuit.
+* In addition, circuit building for me is adding one element at a time and testing if it works before moving on to the next. Because these components are in parallel, troubleshooting and problemsolving becomes easier.
+* Organization is very important! Colour coding and arranging the wires in tandem with the circuit's various components on the breadboard when it came to transferring my schematic into a tangible, working product.
