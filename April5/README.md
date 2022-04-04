@@ -6,7 +6,10 @@ https://user-images.githubusercontent.com/98512628/161628569-78e90983-ee06-4bae-
 
 ![button](https://github.com/l-mccarthy/IntroToIM/blob/main/April5/Media/button_pushed.JPG)
 
-* 
+* The digital sensor is the push-button and the analog sensor is the light-dependent resistor (LDR).
+* The circuit emulates a race track light when the button is pressed as the lights count down each second to the green light, as seen in the image and demo video above.
+* When not pressed, the red lights blink in a downward pattern to signify waiting, as if skipping the final green light.
+* The darker the environment, the faster the red lights alternate when the button is not pressed.
 
 ### Schematic:
 
