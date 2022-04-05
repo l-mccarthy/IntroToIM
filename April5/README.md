@@ -1,4 +1,5 @@
 # Analog and Digital Sensors - Race Track Lights
+### Demo Video:
 
 https://user-images.githubusercontent.com/98512628/161628569-78e90983-ee06-4bae-b6a7-79ba07dc75ad.mp4
 
@@ -7,9 +8,21 @@ https://user-images.githubusercontent.com/98512628/161628569-78e90983-ee06-4bae-
 ![button](https://github.com/l-mccarthy/IntroToIM/blob/main/April5/Media/button_pushed.JPG)
 
 * The digital sensor is the push-button and the analog sensor is the light-dependent resistor (LDR).
-* The circuit emulates a race track light when the button is pressed as the lights count down each second to the green light, as seen in the image and demo video above.
+* The circuit emulates a race track light when the button is pressed as the lights count down each second to the green light, as seen in the image and demo video above and in the code below.
+```
+ if (buttonState == HIGH) {                 // button on: turn on each LED with 1 second delay
+    digitalWrite(redLED1, HIGH);             // red LEDs will turn on first, then the green one
+    delay(1000);                             // the LEDs will stay on as along as button is pressed
+    digitalWrite(redLED2, HIGH);
+    delay(1000);
+    digitalWrite(greenLED, HIGH);
+}
+```
 * When not pressed, the red lights blink in a downward pattern to signify waiting, as if skipping the final green light.
 * The darker the environment, the faster the red lights alternate when the button is not pressed.
+```
+delay(valueLDR);
+```
 
 ### Schematic:
 
