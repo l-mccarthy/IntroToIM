@@ -40,6 +40,7 @@ delay(valueLDR);
 
 ### Problems and Discoveries:
 
+* Obviously, this is not accurate to actual race track lights which has more lights and more rows (and sometimes more colors like amber) so it is more the mechanism that's being replicated. Looking back, I might have wanted to add a buzzer, giving the project a sonic element to the countdown.
 * I think I have become more comfortable with using Arduino in that I did not run into any problems (compared to previous attempts where I blew out an LED) and that I was able to experiment and, most importantly, have fun with the code once I made the circuit.
 * In addition, circuit building for me is adding one element at a time and testing if it works before moving on to the next. Because these components are in parallel, troubleshooting and problemsolving becomes easier.
 * I also found creating my schematic using Microsoft PowerPoint's shape tools on a blank slide to be both super organized and time-consuming, so I am not sure if I will go this route again when drawing my schematic. 
