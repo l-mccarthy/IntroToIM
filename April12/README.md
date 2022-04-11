@@ -12,8 +12,20 @@ https://user-images.githubusercontent.com/98512628/162845787-fed67868-493d-4784-
 
 ![schematic](https://github.com/l-mccarthy/IntroToIM/blob/main/April12/Media/schematic.png)
 
-### Process
+### Process, Problems, and Discoveries
+
+* Since the idea of a theremin-like instrument was already in my mind before actively building the circuit, choosing which would be analog sensor and digital sensor was simple as the ultrasonic sensor (analog) is "invisible" to the human eye giving it that illusion akin to a theremin.
+* First, knowing how to use the ultrasonic sensor was the initial step of the process before progressing further. I found this great website that explained the component as well as provide an example, which ended up being the basis of our code https://randomnerdtutorials.com/complete-guide-for-ultrasonic-sensor-hc-sr04/.
+* The example provided me with the necessary calculations to convert the milliseconds read by the sensor into a distance measurement of centimeters, how far away roughly an object is. Using a 15cm ruler I tested the calculations and they were fairly accurate, the only issue was that I had to account the error that the sensor starts its "zero" around 0.8cm ahead of actual zero.
+* Next, attaching the piezo buzzer and pushbutton (all in parallel) went smoothly as it is something I am familiar with. I did not want to add a resistor for the buzzer as I prefer how loud it is on its own.
+* I also distinctly kept in mind not to use pins 3 and 11 as use of the tone() function will interfere with PWM output on those pins! I orignially did have a component attached to pin 11 but quickly realised I needed to move it elsewwhere.
+
+![circuit2](https://github.com/l-mccarthy/IntroToIM/blob/main/April12/Media/circuit2.jpg)
+
+* As for the code, it was a matter of combining our knowledge of what we did with the pushbutton, the puzzer, and our newfound understanding of the sensor.
+* The code used the built-in toneMelody example as a starting point, and the array of notes was modified to fit the C Major scale so everything will sound in tune not matter what note or combination of notes the user plays.
+* I color coded red wires for 5V, black wires for GND, a white wire for the buzzer, a blue wire for the blue pushbutton, and the rest of the colors (green and yellow) were applied to the ultrasonic sensor (trig and echo).
+* Below is what the final circuit looks like:
 
 ![circuit1](https://github.com/l-mccarthy/IntroToIM/blob/main/April12/Media/circuit1.jpg)
 
-![circuit2](https://github.com/l-mccarthy/IntroToIM/blob/main/April12/Media/circuit2.jpg)
