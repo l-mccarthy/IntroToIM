@@ -24,6 +24,9 @@ https://user-images.githubusercontent.com/98512628/162845787-fed67868-493d-4784-
 
 * As for the code, it was a matter of combining our knowledge of what we did with the pushbutton, the puzzer, and our newfound understanding of the sensor.
 * The code used the built-in toneMelody example as a starting point, and the array of notes was modified to fit the C Major scale so everything will sound in tune not matter what note or combination of notes the user plays.
+* Then, the reading from the sensor, now convereted into centimeters is then used for a bunch of if statements that assign a specific cm reading to a note for the buzzer to play. Since the buzzer all the time would become annoying, the decision to have noTone after 15cm or more was implemented.
+* The digital sensor implementation is that when the button is pressed the notes played will "jump" an octave higher, and what the code is doing is moving all the assigned notes for each if statement "up" the array by adding 7. And 7 because those are the number of notes that are in the scale.
+* The 15 cm ruler next to the analog sensor was left there as part of the design as a signifier for the user to realise they are playing a different note depending on the distance, and thus the ability to manipulate this relationship, almost like invisible piano keys.
 * I color coded red wires for 5V, black wires for GND, a white wire for the buzzer, a blue wire for the blue pushbutton, and the rest of the colors (green and yellow) were applied to the ultrasonic sensor (trig and echo).
 * Below is what the final circuit looks like:
 
