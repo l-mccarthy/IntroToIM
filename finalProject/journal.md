@@ -13,3 +13,7 @@ Arduino circuit and program will allow users to control the steps using buttons 
 ### p5.js
 
 p5.js will be my "synthesizer" as the signals being sent from Arduino will correspond to a certain sound in the code. I might additionally have a saw wave emulator for the bassline (which is one of the built-in p5.js examples). Moreover, I could also display a sound viusalizer on screen using p5.
+
+## Group Partner 21/04
+
+Turns out Daniel is doing the exact same project as me! We have decided to partner up.
