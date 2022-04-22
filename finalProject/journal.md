@@ -36,14 +36,20 @@ p5.js will be my "synthesizer" as the signals being sent from Arduino will corre
 
 Turns out Daniel is doing the exact same project as me! We have decided to partner up.
 
-## 22/04 Preliminary testing
+## 22/04 Preliminary testing + finalized proposal
 
 Today we attempted figuring out how the lowpass filter works using a p5 built-in example, here is how we tested it and [this is the link to the sound file](https://github.com/l-mccarthy/IntroToIM/blob/main/finalProject/Media/sound.mp3) you need to upload if you want to test it.
 
 https://editor.p5js.org/l-mccarthy/sketches/Xh6LCMQ5k
 
-Another we need to figure out is the delay between notes, that for example it will wait 2-3 seconds until it runs. For when we start making it physically, it will be 4 steps to figure out how it will work, and once we write the code and debug everything for the 4 step sequencer to work, we can add as many more steps as we want - but an 8 step sequencer is most economical.
+Another aspect we need to figure out is the delay between notes, that for example it will wait 2-3 seconds until it runs. For when we start making it physically, it will be 4 steps to figure out how it will work, and once we write the code and debug everything for the 4 step sequencer to work, we can add as many more steps as we want - but an 8 step sequencer is most economical.
 
 ### Final project proposal
 
+**What the p5 canvas display will look like:**
 
+![display](https://github.com/l-mccarthy/IntroToIM/blob/main/finalProject/Media/p5_Display_Sketch.png)
+
+**A closer look at the "notes" class displayed on p5:**
+
+![notes display](https://github.com/l-mccarthy/IntroToIM/blob/main/finalProject/Media/Notes_Sketch.png)
