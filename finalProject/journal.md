@@ -17,5 +17,3 @@ p5.js will be my "synthesizer" as the signals being sent from Arduino will corre
 ## Group Partner 21/04
 
 Turns out Daniel is doing the exact same project as me! We have decided to partner up.
-
-### The rest of the journal documentation will be on Daniel's journal: https://github.com/danielnivia/IntrotoIM/blob/main/finalProject/journal.md
