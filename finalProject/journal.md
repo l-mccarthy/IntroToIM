@@ -35,3 +35,11 @@ p5.js will be my "synthesizer" as the signals being sent from Arduino will corre
 ## Group Partner 21/04
 
 Turns out Daniel is doing the exact same project as me! We have decided to partner up.
+
+## 22/04
+
+Today we attempted figuring out how the lowpass filter works using a p5 built-in example, here is how we tested it and [this is the link to the sound file](https://github.com/l-mccarthy/IntroToIM/blob/main/finalProject/Media/sound.mp3) you need to upload if you want to test it.
+
+https://editor.p5js.org/l-mccarthy/sketches/Xh6LCMQ5k
+
+Another we need to figure out is the delay between notes, that for example it will wait 2-3 seconds until it runs.
