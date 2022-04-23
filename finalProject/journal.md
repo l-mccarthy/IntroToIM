@@ -54,6 +54,20 @@ We decided for the final concept to stick with the 8 step sequencer idea, howeve
 
 ![display](https://github.com/l-mccarthy/IntroToIM/blob/main/finalProject/Media/p5_Display_Sketch.png)
 
+**What Arduino will do:**
+* 8 toggle switch inputs to represent a step in the sequence, a switch that is on will send data to p5.
+* Many potentiometers, one for each of the 8 steps to control pitch, plus others to control various effects applied to the overall sound.
+* Mapping the various potentiometers.
+* Giving each pin used an appropriate variable.
+
+**What p5 will do:**
+* Variables for pitch, octave, bpm (beats per minute), frequency, resonance, note number in the sequence.
+* Functions to establish how certain variables will alter the sound.
+* Class constructor for what the "note" will look like and how it will act.
+* Recieve potentiometer data from Arduino which controls all the variables apart from the note's number/order in the sequence.
+* Recieve toggle switch data from Arduino which tells p5 which note to play and where.
+* Sound will come from p5, we will upload samples to be played.
+
 **A closer look at the "notes" class displayed on p5:**
 
 ![notes display](https://github.com/l-mccarthy/IntroToIM/blob/main/finalProject/Media/Notes_Sketch.png)
