@@ -2,6 +2,8 @@
 
 ## 19/04 Preliminary Concept
 
+![top-10-best-step-sequencers](https://user-images.githubusercontent.com/98512628/164894845-058bb252-0a7c-4383-b535-990448dcb540.jpg)
+
 ### Description
 
 I will be creating an 8 step sequencer. A step sequencer is a hardware unit that divides a measure of music into a pre-determined number of note values called "steps". Considering the nature of step sequencers and limitations of both my knowledge and technology available to me, this device will either be a drum machine or bassline sequencer in the vein of the legendary Roland TB-303 Bassline synthesizer. Although, I am wondering if I can do "both" by using states in p5 somehow. Additionally, I believe the majority of step sequencers have 16 steps but incorporating 16 might be too much, but I might give it a shot!
