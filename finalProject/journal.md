@@ -1,10 +1,18 @@
 # Final Project Journal
 
-## Preliminary Concept 19/04
+## 19/04 Preliminary Concept
 
 ### Description
 
 I will be creating an 8 step sequencer. A step sequencer is a hardware unit that divides a measure of music into a pre-determined number of note values called "steps". Considering the nature of step sequencers and limitations of both my knowledge and technology available to me, this device will either be a drum machine or bassline sequencer in the vein of the legendary Roland TB-303 Bassline synthesizer. Although, I am wondering if I can do "both" by using states in p5 somehow. Additionally, I believe the majority of step sequencers have 16 steps but incorporating 16 might be too much, but I might give it a shot!
+
+### Arduino
+
+Arduino circuit and program will allow users to control the steps using buttons that are in a row. A potentiometer can control note pitch. Another potentiometer can control which drum sound/sample is used (kick, clap, hi-hat, etc.). Plus, a row of LEDs for every step will light up showing each step used. If I can find a way, I could also add potentiometers to control lowpass and highpass filters.
+
+### p5.js
+
+p5.js will be my "synthesizer" as the signals being sent from Arduino will correspond to a certain sound in the code. I might additionally have a saw wave emulator for the bassline (which is one of the built-in p5.js examples). Moreover, I could also display a sound viusalizer on screen using p5.
 
 ### UPDATE 22/04: Daniel's description
 
@@ -24,19 +32,11 @@ For my final project I am thinking to develop a 8-step sequencer with some contr
 
 [Talking Arduino | Playing MP3 audio with Arduino | Arduino PCM audio without audio or mp3 module - electronics GURU](https://www.youtube.com/watch?v=F28Znry0qcw)
 
-### Arduino
-
-Arduino circuit and program will allow users to control the steps using buttons that are in a row. A potentiometer can control note pitch. Another potentiometer can control which drum sound/sample is used (kick, clap, hi-hat, etc.). Plus, a row of LEDs for every step will light up showing each step used. If I can find a way, I could also add potentiometers to control lowpass and highpass filters.
-
-### p5.js
-
-p5.js will be my "synthesizer" as the signals being sent from Arduino will correspond to a certain sound in the code. I might additionally have a saw wave emulator for the bassline (which is one of the built-in p5.js examples). Moreover, I could also display a sound viusalizer on screen using p5.
-
-## Group Partner 21/04
+## 21/04 Group Partner
 
 Turns out Daniel is doing the exact same project as me! We have decided to partner up.
 
-## 22/04 Preliminary testing + finalized proposal
+## 22/04 Preliminary testing + Finalized proposal
 
 Today we attempted figuring out how the lowpass filter works using a p5 built-in example, here is how we tested it and [this is the link to the sound file](https://github.com/l-mccarthy/IntroToIM/blob/main/finalProject/Media/sound.mp3) you need to upload if you want to test it.
 
@@ -46,7 +46,9 @@ Another aspect we need to figure out is the delay between notes, that for exampl
 
 ### Final project proposal
 
-**What the p5 canvas display will look like:**
+We decided for the final concept to stick with the 8 step sequencer idea, however the question we asked ourselves was how do we elevate / make this different to existing step sequencers? And the answer is to take advantage of using both Arduino and p5.js, analog and digital. Not only will the user be physically interacting with the hardware, but they will also be interacting with the display of p5 to see what notes they are sequencing in sort of a "piano roll" feature. In most modern DAW (digital audio workstation) software, the term "piano roll" refers to a graphical display of, and means of editing, MIDI note data; along with entering the pitch, length and velocity of notes manually, instead of recording the output of a device for entering note data, like a keyboard. Below is what we envision this feature to look like.
+
+**p5 canvas display:**
 
 ![display](https://github.com/l-mccarthy/IntroToIM/blob/main/finalProject/Media/p5_Display_Sketch.png)
 
