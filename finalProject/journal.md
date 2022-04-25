@@ -71,3 +71,7 @@ We decided for the final concept to stick with the 8 step sequencer idea, howeve
 **A closer look at the "notes" class displayed on p5:**
 
 ![notes display](https://github.com/l-mccarthy/IntroToIM/blob/main/finalProject/Media/Notes_Sketch.png)
+
+## 25/04 Creating the project
+
+
