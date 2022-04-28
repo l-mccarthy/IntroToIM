@@ -74,4 +74,9 @@ We decided for the final concept to stick with the 8 step sequencer idea, howeve
 
 ## 25/04 Creating the project
 
+## 26/04 Alternating pitch and creating steps
+
+## 27/04 Resolving the potentiometer problem
+
+## 28/04 Thursday's class
 
