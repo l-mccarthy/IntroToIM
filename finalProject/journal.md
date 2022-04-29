@@ -100,13 +100,12 @@ https://user-images.githubusercontent.com/98512628/165918645-21e68e76-dbc9-4fa1-
 
 ## 27/04 Resolving the potentiometer problem
 
-Looked at the p5 reference page for frameRate() (https://p5js.org/reference/#/p5/frameRate) which said:
-
-"Calling frameRate() with arguments that are not of the type **numbers** or are non positive also returns current framerate."
-
-So we converted the string to a number using int() for the potentiometers that controlled tempo, frequency, and resonance.
+* Looked at the p5 reference page for frameRate() (https://p5js.org/reference/#/p5/frameRate) which said:
+* "Calling frameRate() with arguments that are not of the type **numbers** or are non positive also returns current framerate."
+* So we converted the string to a number using int() for the potentiometers that controlled tempo, frequency, and resonance.
 
 ## 28/04 Thursday's class
+
 * Created the menu screen and ability to switch between menu and sequencer display.
 * Created a piano roll and outline for the sequencer display.
 * The display includes a piano roll (at the moment only a full octave can be seen on the left-hand side) where the user will be able to see the pitch, frequency, and resonance of the note they are playing.
@@ -127,4 +126,3 @@ So we converted the string to a number using int() for the potentiometers that c
 ![Completed until now](https://user-images.githubusercontent.com/98512628/165952837-6918c979-b383-4e10-a143-b89bc5c759c1.png)
 
 ![Missing](https://user-images.githubusercontent.com/98512628/165952858-68000f48-f4ab-4779-af52-f2a3cde7330d.png)
-
