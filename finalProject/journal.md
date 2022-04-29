@@ -107,9 +107,24 @@ Looked at the p5 reference page for frameRate() (https://p5js.org/reference/#/p5
 So we converted the string to a number using int() for the potentiometers that controlled tempo, frequency, and resonance.
 
 ## 28/04 Thursday's class
+* Created the menu screen and ability to switch between menu and sequencer display.
+* Created a piano roll and outline for the sequencer display.
+* The display includes a piano roll (at the moment only a full octave can be seen on the left-hand side) where the user will be able to see the pitch, frequency, and resonance of the note they are playing.
+* The display will also show the steps on the bottom and which step the user is on by changing its colour, at the moment we have a placeholder layout for the steps and decided on the colours, the next job is to create a class for the steps to make it interactive.
 
 **Plan for how the colours of notes will change:**
 
 ![frequency_colours](https://user-images.githubusercontent.com/98512628/165909640-795af46e-01c8-42b2-bd17-bc614ee935c8.jpg)
 
 ## 29/04 Displaying steps on p5
+
+* Created a class for displaying the step rectangles beneath the piano roll.
+* Challenge was changing the colour when the button was pressed, which was solved by:
+* `if (buttonState % 4 === 0 && i === 0 )`
+* At the moment this is only for this first four steps but we will change this when we get the 6 LEDs on the breadboard, it is most important to know that this aspect is working correctly.
+* Diagrams of what we have completed and we still need to do:
+
+![Completed until now](https://user-images.githubusercontent.com/98512628/165952837-6918c979-b383-4e10-a143-b89bc5c759c1.png)
+
+![Missing](https://user-images.githubusercontent.com/98512628/165952858-68000f48-f4ab-4779-af52-f2a3cde7330d.png)
+
