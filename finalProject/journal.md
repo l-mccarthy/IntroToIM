@@ -82,13 +82,14 @@ We decided for the final concept to stick with the 8 step sequencer idea, howeve
 
 https://user-images.githubusercontent.com/98512628/165950888-ab479875-cbe6-41c4-b468-cd7ec0eb9661.mp4
 
-**Playiing a _sequence_ of notes when mouse is pressed:**
+**Playing a _sequence_ of notes when mouse is pressed:**
 
 https://user-images.githubusercontent.com/98512628/165950771-90eecd09-7144-4574-b054-2ff4ddd51cad.mp4
 
 ## 26/04 Alternating pitch and creating steps
 
 **Adding LEDs:**
+
 ![circuit1](https://user-images.githubusercontent.com/98512628/165950553-6638bf26-0d00-4b6c-bd5e-3a442398abf6.jpg)
 
 ![circuit2](https://user-images.githubusercontent.com/98512628/165950581-0c3a1351-080f-4c7a-a3f1-cd2dc5ddc1e8.jpg)
@@ -98,6 +99,12 @@ https://user-images.githubusercontent.com/98512628/165950771-90eecd09-7144-4574-
 https://user-images.githubusercontent.com/98512628/165918645-21e68e76-dbc9-4fa1-b817-f4973aa40557.mp4
 
 ## 27/04 Resolving the potentiometer problem
+
+Looked at the p5 reference page for frameRate() (https://p5js.org/reference/#/p5/frameRate) which said:
+
+"Calling frameRate() with arguments that are not of the type **numbers** or are non positive also returns current framerate."
+
+So we converted the string to a number using int() for the potentiometers that controlled tempo, frequency, and resonance.
 
 ## 28/04 Thursday's class
 
