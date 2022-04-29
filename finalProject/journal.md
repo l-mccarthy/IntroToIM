@@ -76,7 +76,11 @@ We decided for the final concept to stick with the 8 step sequencer idea, howeve
 
 ## 26/04 Alternating pitch and creating steps
 
+https://user-images.githubusercontent.com/98512628/165918645-21e68e76-dbc9-4fa1-b817-f4973aa40557.mp4
+
 ## 27/04 Resolving the potentiometer problem
 
 ## 28/04 Thursday's class
+
+![frequency_colours](https://user-images.githubusercontent.com/98512628/165909640-795af46e-01c8-42b2-bd17-bc614ee935c8.jpg)
 
