@@ -74,7 +74,26 @@ We decided for the final concept to stick with the 8 step sequencer idea, howeve
 
 ## 25/04 Creating the project
 
+**Circuit:**
+
+![pots_button](https://user-images.githubusercontent.com/98512628/165949113-bf7b7fe7-6243-4dfb-a6fe-7222d4d2dbc6.jpg)
+
+**Playing a note when mouse is pressed:**
+
+https://user-images.githubusercontent.com/98512628/165950888-ab479875-cbe6-41c4-b468-cd7ec0eb9661.mp4
+
+**Playiing a _sequence_ of notes when mouse is pressed:**
+
+https://user-images.githubusercontent.com/98512628/165950771-90eecd09-7144-4574-b054-2ff4ddd51cad.mp4
+
 ## 26/04 Alternating pitch and creating steps
+
+**Adding LEDs:**
+![circuit1](https://user-images.githubusercontent.com/98512628/165950553-6638bf26-0d00-4b6c-bd5e-3a442398abf6.jpg)
+
+![circuit2](https://user-images.githubusercontent.com/98512628/165950581-0c3a1351-080f-4c7a-a3f1-cd2dc5ddc1e8.jpg)
+
+**Pitch changing demo:**
 
 https://user-images.githubusercontent.com/98512628/165918645-21e68e76-dbc9-4fa1-b817-f4973aa40557.mp4
 
@@ -82,5 +101,8 @@ https://user-images.githubusercontent.com/98512628/165918645-21e68e76-dbc9-4fa1-
 
 ## 28/04 Thursday's class
 
+**Plan for how the colours of notes will change:**
+
 ![frequency_colours](https://user-images.githubusercontent.com/98512628/165909640-795af46e-01c8-42b2-bd17-bc614ee935c8.jpg)
 
+## 29/04 Displaying steps on p5
