@@ -100,9 +100,25 @@ https://user-images.githubusercontent.com/98512628/165918645-21e68e76-dbc9-4fa1-
 
 ## 27/04 Resolving the potentiometer problem
 
-* Looked at the p5 reference page for frameRate() (https://p5js.org/reference/#/p5/frameRate) which said:
-* "Calling frameRate() with arguments that are not of the type **numbers** or are non positive also returns current framerate."
-* So we converted the string to a number using int() for the potentiometers that controlled tempo, frequency, and resonance.
+* We ran into a problem that took the entire working session to figure out, and it turned out the solution was very simple!
+* While we did figure out how to control the pitches, we also wanted to change the tempo, frequency, and resonance of the samples using serial communication from potentiometers. As a result, we simply put the variables of the readings (`pot2`, `pot3`, `pot4`) into the function for the filters, but it did not work.
+* We used `print()` to see the readings before and after the filter function would recieve the potentiometer's reading but it looked correct even though the tempo (frame rate) was not changing.
+* So then we thought p5 did not allow us to change the frame rate while the program was running, however we replaced the potentiometer readings with a mapped `mouseX` variable and the frame rate did change! So it was not a problem with the frame rate function itself.
+* Still doubtful, we decided to look at the p5 reference page for frameRate() (https://p5js.org/reference/#/p5/frameRate) which said: "Calling `frameRate()` with arguments that are not of the type **numbers** or are non positive also returns current framerate."
+* STRINGS! We had the potentiometer readings as string variables, so of cource the frame rate (and the frequency filter) was not changing because the values were treated as text.
+* So we simply converted the strings to a number value using `int()` for the potentiometers that controlled tempo, frequency, and resonance.
+
+```
+let inputs = split(inString, ","); // split the string on the commas
+    if (inputs.length === 5) {
+      // if there are five elements
+      button = inputs[0];
+      pot1 = inputs[1];
+      pot2 = int(inputs[2]); // receives a string convert into int
+      pot3 = int(inputs[3]);
+      pot4 = int(inputs[4]);
+      }
+```
 
 ## 28/04 Thursday's class
 
