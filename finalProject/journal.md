@@ -142,3 +142,5 @@ let inputs = split(inString, ","); // split the string on the commas
 ![Completed until now](https://user-images.githubusercontent.com/98512628/165952837-6918c979-b383-4e10-a143-b89bc5c759c1.png)
 
 ![Missing](https://user-images.githubusercontent.com/98512628/165952858-68000f48-f4ab-4779-af52-f2a3cde7330d.png)
+
+## 01/05 Changing colour and opacity of notes
