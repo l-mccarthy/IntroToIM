@@ -144,3 +144,5 @@ let inputs = split(inString, ","); // split the string on the commas
 ![Missing](https://user-images.githubusercontent.com/98512628/165952858-68000f48-f4ab-4779-af52-f2a3cde7330d.png)
 
 ## 01/05 Changing colour and opacity of notes
+
+## 02/05 Finishing the piano roll display
