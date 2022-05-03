@@ -190,6 +190,8 @@ if (buttonState%4 == 0){
 
 ![circuit2](https://user-images.githubusercontent.com/98512628/165950581-0c3a1351-080f-4c7a-a3f1-cd2dc5ddc1e8.jpg)
 
+After this step we believe we are done with the Arduino code since the LEDs work along with the serial communication, so it was time to focus our efforts to p5 and start with one potentiometer at a time, the most important being pitch (and once we could make this work we would go home for the day). The mapped value of the first potentiometer `pot1` will be used to select the sample from the array, however doing this would change the pitch of _all_ the steps at the same time which is not what we want. So, we used a state machine from the button and assigned each `indexSound` to a different state that the `pot1` reading will only affect the ordered step of what state the sequencer was in (as signified by the newly added LEDs).
+
 Code that changes the pitch:
 ```
 if (buttonState % 4 === 0) {
