@@ -40,11 +40,11 @@ Turns out Daniel is doing the exact same project as me! We have decided to partn
 
 ## 22/04 Preliminary testing + Finalized proposal
 
-Today we attempted figuring out how the lowpass filter works using a p5 built-in example, here is how we tested it and [this is the link to the sound file](https://github.com/l-mccarthy/IntroToIM/blob/main/finalProject/Media/sound.mp3) you need to upload if you want to test it.
+Today we attempted figuring out how the lowpass filter works using a p5 built-in example, here is how we tested it and [this is the link to the sound file](https://github.com/l-mccarthy/IntroToIM/blob/main/finalProject/Media/sound.mp3) you need to upload if you want to test it. We were surprised by how well catered p5 is to creating, playing, and manipulating sound!
 
-https://editor.p5js.org/l-mccarthy/sketches/Xh6LCMQ5k
+Link to filter testing: https://editor.p5js.org/l-mccarthy/sketches/Xh6LCMQ5k
 
-Another aspect we need to figure out is the delay between notes, that for example it will wait 2-3 seconds until it runs. For when we start making it physically, it will be 4 steps to figure out how it will work, and once we write the code and debug everything for the 4 step sequencer to work, we can add as many more steps as we want - but an 8 step sequencer is most economical.
+Another aspect we need to figure out is the delay between notes, that for example it will wait 2-3 seconds until it runs. For when we start making it physically, it will be 4 steps to figure out how it will work, and once we write the code and debug everything for the 4 step sequencer to work, we can add as many more steps as we want - but an 8 step sequencer is the most common and desirable.
 
 ### Final project proposal
 
@@ -73,6 +73,10 @@ We decided for the final concept to stick with the 8 step sequencer idea, howeve
 ![notes display](https://github.com/l-mccarthy/IntroToIM/blob/main/finalProject/Media/Notes_Sketch.png)
 
 ## 25/04 Creating the project
+
+Today Daniel and I gathered in the IM Lab to create the breadboard and Arduino circuit. During this process, we realised we both had conflicting ideas on what we envisioned the final product will look like since I was thinking of having a switch and potentiometer for each step like the more traditional step sequencers and Daniel wanted to have one potentiometer for pitch controlling and toggle through the steps with one button. I agreed to Daniel's proposition as it was easier and required less materials and p5/Arduino code since we will be communicating with less sensors.
+
+Mapping the potentiometers sketch: https://editor.p5js.org/l-mccarthy/sketches/_G13x4umP.
 
 **Circuit:**
 
