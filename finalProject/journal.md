@@ -102,6 +102,7 @@ https://user-images.githubusercontent.com/98512628/165918645-21e68e76-dbc9-4fa1-
 
 * We ran into a problem that took the entire working session to figure out, and it turned out the solution was very simple!
 * While we did figure out how to control the pitches, we also wanted to change the tempo, frequency, and resonance of the samples using serial communication from potentiometers. As a result, we simply put the variables of the readings (`pot2`, `pot3`, `pot4`) into the function for the filters, but it did not work.
+* To make things simpler for debugging purposes, we created a simplified p5 project file of merely one potentiometer mapped whereby the reading would affect the frame rate. An ellipse would move across the canvas and the greater the frame rate the quicker it would move. A link to the sketch: https://editor.p5js.org/l-mccarthy/sketches/f21EKiizNK.
 * We used `print()` to see the readings before and after the filter function would recieve the potentiometer's reading but it looked correct even though the tempo (frame rate) was not changing.
 * So then we thought p5 did not allow us to change the frame rate while the program was running, however we replaced the potentiometer readings with a mapped `mouseX` variable and the frame rate did change! So it was not a problem with the frame rate function itself.
 * Still doubtful, we decided to look at the p5 reference page for frameRate() (https://p5js.org/reference/#/p5/frameRate) which said: "Calling `frameRate()` with arguments that are not of the type **numbers** or are non positive also returns current framerate."
@@ -131,6 +132,8 @@ let inputs = split(inString, ","); // split the string on the commas
 
 ![frequency_colours](https://user-images.githubusercontent.com/98512628/165909640-795af46e-01c8-42b2-bd17-bc614ee935c8.jpg)
 
+Link to latest sketch: https://editor.p5js.org/l-mccarthy/sketches/320HEHZOr
+
 ## 29/04 Displaying steps on p5
 
 * Created a class for displaying the step rectangles beneath the piano roll.
@@ -143,6 +146,12 @@ let inputs = split(inString, ","); // split the string on the commas
 
 ![Missing](https://user-images.githubusercontent.com/98512628/165952858-68000f48-f4ab-4779-af52-f2a3cde7330d.png)
 
+Link to latest sketch: https://editor.p5js.org/l-mccarthy/sketches/ZagAQpUIj
+
 ## 01/05 Changing colour and opacity of notes
 
+Link to latest sketch: https://editor.p5js.org/l-mccarthy/sketches/Rt37KSam9
+
 ## 02/05 Finishing the piano roll display
+
+Link to latest sketch: https://editor.p5js.org/l-mccarthy/sketches/TNRLu8btt
