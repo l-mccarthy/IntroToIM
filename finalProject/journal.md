@@ -113,7 +113,7 @@ void loop() {
 
 The sketch used to authorize serial communication and verifying the readings of potentiometers: https://editor.p5js.org/l-mccarthy/sketches/_G13x4umP.
 
-Once we had the serial communication we needed to upload the samples to p5 so Daniel opened up a DAW (Digital Audio Workstation), chose a plugin with a sound we liked and exported a sound file in mp3 for each note in a total of four octaves. We created a folder called samples in p5 and uploaded them there. However, we had to add each sound file individually to the preload function which would be very tedious so instead a `for` loop was made to print what needed to be written, along with a variable that would change the sample number:
+Once we had the serial communication we needed to upload the samples to p5 so Daniel opened up a DAW (Digital Audio Workstation), chose a plugin with a sound we liked and exported a sound file in mp3 for each note in a total of four octaves. We created a folder called samples in p5 and uploaded them there. The samples would then be added to the `soundsList` array so the samples can be called upon. However, we had to add each sound file individually to the preload function which would be very tedious so instead a `for` loop was made to print what needed to be written, along with a variable that would change the sample number:
 
 ```
  samples = loadSound("Samples/00.mp3");
@@ -121,11 +121,35 @@ Once we had the serial communication we needed to upload the samples to p5 so Da
 ```
 ^ this x48, then copy-pasted from the p5 console into the code.
 
-Unfortunately, p5 would keeping loading for at least 3-4 minutes until we decided to stop the problem. We tried preloading only 11 samples (one ocatve) and it loaded in a comfortable timeo of around 5 seconds. Unless we find some other way to speed it up will stick one, maybe two, octaves (depsite the effort made to fulfill 4 octaves worth of samples).
+Unfortunately, p5 would keeping loading for at least 3-4 minutes until we decided to stop the program. We tried preloading only 11 samples (one ocatve) and it loaded in a comfortable time of around 5 seconds. Unless we find some other way to speed it up we will stick with one, maybe two, octaves (depsite the effort made to fulfill 4 octaves worth of samples). To test if the preload was working, we made a function that would play a chosen sample when the mouse is pressed.
 
 **Playing a note when mouse is pressed:**
 
 https://user-images.githubusercontent.com/98512628/165950888-ab479875-cbe6-41c4-b468-cd7ec0eb9661.mp4
+
+Now that we know we can play a sound on p5, we had to figure out how to play a sequence of samples that would loop, which forms the basis of the step sequencer idea. Basically, we assigned an index sound to specific samples (C, D, D#, and A#) using a number representing their position in the array. We then created a `step` variable which would increase until reaching the 4th step where it would reset, thus making the looped sequence. The code and video demo are shown below:
+
+```
+  if(mouseIsPressed === true){
+    if (step === 0){
+    soundsList[indexSound1].play();
+      step++
+    }
+    
+    else if(step === 1){
+    soundsList[indexSound2].play();  
+      step++
+    }
+    
+    else if(step === 2){
+      soundsList[indexSound3].play();  
+      step++
+    }
+    else if(step === 3){
+      soundsList[indexSound4].play();  
+      step = 0
+    }
+```
 
 **Playing a _sequence_ of notes when mouse is pressed:**
 
