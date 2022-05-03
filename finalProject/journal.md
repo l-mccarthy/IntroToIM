@@ -113,7 +113,15 @@ void loop() {
 
 The sketch used to authorize serial communication and verifying the readings of potentiometers: https://editor.p5js.org/l-mccarthy/sketches/_G13x4umP.
 
-Once we had the serial communication we needed to upload the samples to p5 so Daniel opened up a DAW (Digital Audio Workstation), chose a plugin with a sound we liked and exported a sound file in mp3 for each note in a total of four octaves. We created a folder called samples in p5 and uploaded them there.
+Once we had the serial communication we needed to upload the samples to p5 so Daniel opened up a DAW (Digital Audio Workstation), chose a plugin with a sound we liked and exported a sound file in mp3 for each note in a total of four octaves. We created a folder called samples in p5 and uploaded them there. However, we had to add each sound file individually to the preload function which would be very tedious so instead a `for` loop was made to print what needed to be written, along with a variable that would change the sample number:
+
+```
+ samples = loadSound("Samples/00.mp3");
+  soundsList.push(samples);
+```
+^ this x48, then copy-pasted from the p5 console into the code.
+
+Unfortunately, p5 would keeping loading for at least 3-4 minutes until we decided to stop the problem. We tried preloading only 11 samples (one ocatve) and it loaded in a comfortable timeo of around 5 seconds. Unless we find some other way to speed it up will stick one, maybe two, octaves (depsite the effort made to fulfill 4 octaves worth of samples).
 
 **Playing a note when mouse is pressed:**
 
