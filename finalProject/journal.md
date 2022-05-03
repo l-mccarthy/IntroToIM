@@ -165,7 +165,26 @@ Despite us planning to have p5 as the main display for the user, the user will a
 * 1 more black wire (which ended up being a green wire because we ran out of black wires)
 * 4 white wires (one for each LED)
 
-**Adding LEDs:**
+Next, we had to work on the Arduino code to make the first LED light up, and then the next one when the button is pressed. So, we made a variable for the button state and had the state increase every time the button was pressed. Each state is assigned to a certain LED that will turn on and the others off using `if` statements (with a modulo operator of 4). We have gotten the hang of state machines so this task was not too difficult.
+
+```
+if (buttonMapped == 1){
+    buttonState = buttonState + 1;
+  }
+```
+
+An example of one of the states, note that only one of the LEDs is turned on and others are being told to turn off at this specific state:
+
+```
+if (buttonState%4 == 0){
+    digitalWrite(5, HIGH);
+    digitalWrite(2, LOW);
+    digitalWrite(3, LOW);
+    digitalWrite(4, LOW);
+  }
+ ```
+
+**Adding LEDs to Arduino:**
 
 ![circuit1](https://user-images.githubusercontent.com/98512628/165950553-6638bf26-0d00-4b6c-bd5e-3a442398abf6.jpg)
 
