@@ -89,6 +89,28 @@ Today Daniel and I gathered in the IM Lab to create the breadboard and Arduino c
 
 ![pots_button](https://user-images.githubusercontent.com/98512628/165949113-bf7b7fe7-6243-4dfb-a6fe-7222d4d2dbc6.jpg)
 
+Once we had the circuit built the next step was to write the code in Arduino in order to communicate with p5 since almost all of what is important to our project's operations will be from p5. The code below is what we settled upon when mapping the values (and `Serial.print` allows for the communication to occur). To give context: `pot1` controls the pitch so from 0 to 12 covers the range of an entire octave; `pot2` controls frame rate and small values are preferable because otherwise the sounds will loop in succession very, very quickly; `pot3` controls frequency and the 100 to 15000 (hertz) range is what was given in the low-pass filter example so we stuck with it; `pot4` controls resonance and the 5 to 15 range was also included in the same example. For the button we just needed a 0 to 1 (boolean) so `digitalRead` was the most optimal.
+
+```
+void loop() {
+  int buttonMapped = digitalRead(7);
+  int pot1Mapped = map(analogRead(A1), 0, 1023, 0, 12);
+  int pot2Mapped = map(analogRead(A2), 0, 1023, 2, 6);
+  int pot3Mapped = map(analogRead(A3), 0, 1023, 100, 15000);
+  int pot4Mapped = map(analogRead(A4), 0, 1023, 5, 15);
+
+  Serial.print(buttonMapped);
+  Serial.print(",");
+  Serial.print(pot1Mapped);
+  Serial.print(",");
+  Serial.print(pot2Mapped);
+  Serial.print(",");
+  Serial.print(pot3Mapped);
+  Serial.print(",");
+  Serial.print(pot4Mapped);
+  Serial.println();
+```
+
 Mapping the potentiometers sketch: https://editor.p5js.org/l-mccarthy/sketches/_G13x4umP.
 
 
