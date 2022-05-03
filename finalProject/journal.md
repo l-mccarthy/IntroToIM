@@ -155,13 +155,38 @@ Now that we know we can play a sound on p5, we had to figure out how to play a s
 
 https://user-images.githubusercontent.com/98512628/165950771-90eecd09-7144-4574-b054-2ff4ddd51cad.mp4
 
-## 26/04 Alternating pitch and creating steps
+## 26/04 Alternating pitch and displaying steps
+
+Despite us planning to have p5 as the main display for the user, the user will also be interacting with the Arduino circuit so we realised that there should be some physical signifiers as well, thus we decided to implement an LED for each step, and have an LED light up to represent what step the user is currently changing.
+
+**Addition to materials used:**
+* 4 LEDs (colour does not matter so much right now)
+* 4 330 ohm resistors
+* 1 more black wire (which ended up being a green wire because we ran out of black wires)
+* 4 white wires (one for each LED)
 
 **Adding LEDs:**
 
 ![circuit1](https://user-images.githubusercontent.com/98512628/165950553-6638bf26-0d00-4b6c-bd5e-3a442398abf6.jpg)
 
 ![circuit2](https://user-images.githubusercontent.com/98512628/165950581-0c3a1351-080f-4c7a-a3f1-cd2dc5ddc1e8.jpg)
+
+Code that changes the pitch:
+```
+if (buttonState % 4 === 0) {
+      indexSound1 = pot1;
+      counter = 0; // assign counter here
+    } else if (buttonState % 4 === 1) {
+      indexSound2 = pot1;
+      counter = 0;
+    } else if (buttonState % 4 === 2) {
+      indexSound3 = pot1;
+      counter = 0;
+    } else if (buttonState % 4 === 3) {
+      indexSound4 = pot1;
+      counter = 0;
+    }
+```
 
 **Pitch changing demo:**
 
