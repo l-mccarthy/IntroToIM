@@ -76,11 +76,21 @@ We decided for the final concept to stick with the 8 step sequencer idea, howeve
 
 Today Daniel and I gathered in the IM Lab to create the breadboard and Arduino circuit. During this process, we realised we both had conflicting ideas on what we envisioned the final product will look like since I was thinking of having a switch and potentiometer for each step like the more traditional step sequencers and Daniel wanted to have one potentiometer for pitch controlling and toggle through the steps with one button. I agreed to Daniel's proposition as it was easier and required less materials and p5/Arduino code since we will be communicating with less sensors.
 
-Mapping the potentiometers sketch: https://editor.p5js.org/l-mccarthy/sketches/_G13x4umP.
+**List of materials used for circuit:**
+* 4 potentiometers
+* 1 push button
+* 1 10k ohm resistor
+* 2 yellow wires (for the button)
+* 4 blue wires (one for each potentiometer)
+* 5 red wires
+* 5 black wires
 
 **Circuit:**
 
 ![pots_button](https://user-images.githubusercontent.com/98512628/165949113-bf7b7fe7-6243-4dfb-a6fe-7222d4d2dbc6.jpg)
+
+Mapping the potentiometers sketch: https://editor.p5js.org/l-mccarthy/sketches/_G13x4umP.
+
 
 **Playing a note when mouse is pressed:**
 
