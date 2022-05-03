@@ -111,8 +111,9 @@ void loop() {
   Serial.println();
 ```
 
-Mapping the potentiometers sketch: https://editor.p5js.org/l-mccarthy/sketches/_G13x4umP.
+The sketch used to authorize serial communication and verifying the readings of potentiometers: https://editor.p5js.org/l-mccarthy/sketches/_G13x4umP.
 
+Once we had the serial communication we needed to upload the samples to p5 so Daniel opened up a DAW (Digital Audio Workstation), chose a plugin with a sound we liked and exported a sound file in mp3 for each note in a total of four octaves. We created a folder called samples in p5 and uploaded them there.
 
 **Playing a note when mouse is pressed:**
 
