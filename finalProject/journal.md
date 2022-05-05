@@ -241,6 +241,14 @@ let inputs = split(inString, ","); // split the string on the commas
 
 Of course, while the two of us know how to use it, to supposedly give our project to a random person at its current state, they would likely not know what to do or where to start. Hence, the idea of a menu screen giving simple instructions was our next addition. Another reason of including a different screen is so the user can switch back to the menu and vice versa to remind themselves on how to use the sequencer in addition to how all the sound will stop when accessing the menu (the constant noise will probably get very annoying at some point!). Simple shapes and if statements in relation to the mouse's position were created for a button that would provide the ability to switch between both displays.
 
+**Menu template:**
+
+![menu_template](https://user-images.githubusercontent.com/98512628/166948358-a7338eb7-8065-4dbf-8318-e48a9bb9c7e7.png)
+
+**Menu button:**
+
+![menu_button](https://user-images.githubusercontent.com/98512628/166948505-f62025e3-1e26-42a8-aaab-a895e3442489.png)
+
 For the sequencer's display a piano roll placed on the left-hand side is made out of rectangles that form to resemble a typical keyboard. Including this piano roll (only a full octave can be seen on the left-hand side), the display includes signifiers where the user will be able to see the pitch, frequency, and resonance of the note they are playing via colour and alpha. Furthermore, the sequencer display will also show the steps on the bottom and which step the user is on by changing its colour, in addition to the LEDs signifying the same thing. At the moment we ended this class with a simple placeholder layout for the steps and we decided on the colours, the next job is to create a class for the steps to make it interactive.
 
 **Plan for how the colours of notes will change:**
