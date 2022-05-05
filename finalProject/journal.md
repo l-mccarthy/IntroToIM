@@ -221,7 +221,7 @@ A link to the sketch: https://editor.p5js.org/l-mccarthy/sketches/f21EKiizNK
 
 We used `print()` to see the readings before and after the filter function would recieve the potentiometer's reading but it looked correct even though the tempo (frame rate) was not changing. So then we thought p5 did not allow us to change the frame rate while the program was running, however we replaced the potentiometer readings with a mapped `mouseX` variable and the frame rate did change! So it was not a problem with the frame rate function itself. Still doubtful, we decided to look at the p5 reference page for frameRate() (https://p5js.org/reference/#/p5/frameRate) which said: "Calling `frameRate()` with arguments that are not of the type **numbers** or are non positive also returns current framerate."
 
-![image](https://user-images.githubusercontent.com/98512628/166923625-f7aba0d4-61e2-444c-87a9-02d4ce93ff42.png)
+![framerate](https://user-images.githubusercontent.com/98512628/166923625-f7aba0d4-61e2-444c-87a9-02d4ce93ff42.png)
 
 STRINGS! We had the potentiometer readings as string variables, so of cource the frame rate (and the frequency filter) was not changing because the values were treated as text. As a result, we simply converted the strings to a number value using `int()` for all the potentiometers that controlled tempo, frequency, and resonance.
 
@@ -239,12 +239,9 @@ let inputs = split(inString, ","); // split the string on the commas
 
 ## 28/04 Thursday's class
 
-Of course, while the two of us know how to use it, to supposedly give our project to a random person at its current state, they would likely not know what to do or where to start. Hence, the idea of a menu screen giving simple instructions was our next addition. Another reason of including a different screen is so the user can switch back to the menu and vice versa to remind themselves on how to use the sequencer in addition to how all the sound will stop when accessing the menu (the constant noise will probably get very annoying at some point!). Simple shapes and if statements in relation to the mouse's position were created for a button that would provide the ability to switch between menu and sequencer display.
+Of course, while the two of us know how to use it, to supposedly give our project to a random person at its current state, they would likely not know what to do or where to start. Hence, the idea of a menu screen giving simple instructions was our next addition. Another reason of including a different screen is so the user can switch back to the menu and vice versa to remind themselves on how to use the sequencer in addition to how all the sound will stop when accessing the menu (the constant noise will probably get very annoying at some point!). Simple shapes and if statements in relation to the mouse's position were created for a button that would provide the ability to switch between both displays.
 
-* Created a menu screen function and ability to switch between menu and sequencer display.
-* Created a piano roll and outline for the sequencer display.
-* The display includes a piano roll (at the moment only a full octave can be seen on the left-hand side) where the user will be able to see the pitch, frequency, and resonance of the note they are playing.
-* The display will also show the steps on the bottom and which step the user is on by changing its colour, at the moment we have a placeholder layout for the steps and decided on the colours, the next job is to create a class for the steps to make it interactive.
+For the sequencer's display a piano roll placed on the left-hand side is made out of rectangles that form to resemble a typical keyboard. Including this piano roll (only a full octave can be seen on the left-hand side), the display includes signifiers where the user will be able to see the pitch, frequency, and resonance of the note they are playing via colour and alpha. Furthermore, the sequencer display will also show the steps on the bottom and which step the user is on by changing its colour, in addition to the LEDs signifying the same thing. At the moment we ended this class with a simple placeholder layout for the steps and we decided on the colours, the next job is to create a class for the steps to make it interactive.
 
 **Plan for how the colours of notes will change:**
 
@@ -267,6 +264,12 @@ Link to latest sketch: https://editor.p5js.org/l-mccarthy/sketches/320HEHZOr
 Link to latest sketch: https://editor.p5js.org/l-mccarthy/sketches/ZagAQpUIj
 
 ## 01/05 Changing colour and opacity of notes
+
+We plan a series of `if` statements for the colour whereby if the `pot3` reading (frequency) is in a certain range the notes will fill with a certain colour.
+
+Changing alpha/transparency will utilise the `setAlpha()` function whereby alpha value is denoted by the `pot4` reading (resonance). We used this example from the p5 reference page and tailored it to our own needs (we actually made it simpler):
+
+![alpha](https://user-images.githubusercontent.com/98512628/166939845-82f7a154-e1a5-4b88-8921-169ac0be82b1.png)
 
 Link to latest sketch: https://editor.p5js.org/l-mccarthy/sketches/Rt37KSam9
 
