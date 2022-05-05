@@ -265,11 +265,27 @@ Link to latest sketch: https://editor.p5js.org/l-mccarthy/sketches/ZagAQpUIj
 
 ## 01/05 Changing colour and opacity of notes
 
-We plan a series of `if` statements for the colour whereby if the `pot3` reading (frequency) is in a certain range the notes will fill with a certain colour.
+This was a shorter working session as we had a lot of things due during this period, but we still made some progress in the p5 code. The schedule of working on it for a few hours every day instead of cramming it all in one long working session is beneficial as we entered each session with a clear head and good enthusiasm. We stuck to the plan of creating a series of `if` statements for the colour whereby if the `pot3` reading (frequency) is in a certain range the notes will fill with a certain colour. Each statement covers a range of 1490. This value was derived by the mapping of `pot3` 100-15000 range. Since the minimum starts at 100 and we want 10 different colours, we subtracted 100 from 15000 (= 14900) and divided the result by 10 (= 1490) to arrive with a value that creates an even range.
+
+```
+if (pot3 >= 100 && pot3 <= 1590) {
+      // increase by increment of 1490
+      this.colour = color(19, 19, 88);
+    } else if (pot3 >= 1590 && pot3 <= 3080) {
+      this.colour = color(95, 0, 187);
+```
+^ continues for a total of 10 `if` statements.
 
 Changing alpha/transparency will utilise the `setAlpha()` function whereby alpha value is denoted by the `pot4` reading (resonance). We used this example from the p5 reference page and tailored it to our own needs (we actually made it simpler):
 
 ![alpha](https://user-images.githubusercontent.com/98512628/166939845-82f7a154-e1a5-4b88-8921-169ac0be82b1.png)
+
+```
+    this.colour.setAlpha(pot4 * 17.5); // full range of alpha 0-255
+    fill(this.colour);
+```
+
+While the value of `17.5` being multiplied to `pot4` is notably a strange choice, it was decided upon from trial-and-error experimentation with a range of values that would best represent the full range of the possible transparency via using the mapped values of `pot4`, since the 5-15 range is too small to generate any noticable difference.
 
 Link to latest sketch: https://editor.p5js.org/l-mccarthy/sketches/Rt37KSam9
 
