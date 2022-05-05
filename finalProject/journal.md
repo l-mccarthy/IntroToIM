@@ -239,7 +239,9 @@ let inputs = split(inString, ","); // split the string on the commas
 
 ## 28/04 Thursday's class
 
-* Created the menu screen and ability to switch between menu and sequencer display.
+Of course, while the two of us know how to use it, to supposedly give our project to a random person at its current state, they would likely not know what to do or where to start. Hence, the idea of a menu screen giving simple instructions was our next addition. Another reason of including a different screen is so the user can switch back to the menu and vice versa to remind themselves on how to use the sequencer in addition to how all the sound will stop when accessing the menu (the constant noise will probably get very annoying at some point!). Simple shapes and if statements in relation to the mouse's position were created for a button that would provide the ability to switch between menu and sequencer display.
+
+* Created a menu screen function and ability to switch between menu and sequencer display.
 * Created a piano roll and outline for the sequencer display.
 * The display includes a piano roll (at the moment only a full octave can be seen on the left-hand side) where the user will be able to see the pitch, frequency, and resonance of the note they are playing.
 * The display will also show the steps on the bottom and which step the user is on by changing its colour, at the moment we have a placeholder layout for the steps and decided on the colours, the next job is to create a class for the steps to make it interactive.
