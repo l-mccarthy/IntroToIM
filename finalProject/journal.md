@@ -300,3 +300,7 @@ Link to latest sketch: https://editor.p5js.org/l-mccarthy/sketches/Rt37KSam9
 ## 02/05 Finishing the piano roll display
 
 Link to latest sketch: https://editor.p5js.org/l-mccarthy/sketches/TNRLu8btt
+
+## 05/05 Conducting initial user testing
+
+https://user-images.githubusercontent.com/98512628/167035593-40001229-2a80-4b9f-b52f-baebf42e21d4.mp4
