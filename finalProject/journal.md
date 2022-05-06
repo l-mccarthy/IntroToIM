@@ -304,3 +304,7 @@ Link to latest sketch: https://editor.p5js.org/l-mccarthy/sketches/TNRLu8btt
 ## 05/05 Conducting initial user testing
 
 https://user-images.githubusercontent.com/98512628/167035593-40001229-2a80-4b9f-b52f-baebf42e21d4.mp4
+
+This is more of a preliminary user test as our project is not entirely finished, we told the user that we plan to solder and make our circuit more presentable, because the most obvious criticism is the fact that the potentiometers are so small and difficult to turn due to their position on the breadboard (and the many tangled wires). Another aspect that was not yet added, which retrospectively we should have added before this user test, is to fill the menu screen with instructions on how to use the step sequencer, thus we had to explain to the user how the sequencer works and what potentiometer controls what. Ideally, when we later do a final user test, we hope that the user can read the instructions and correctly use our project with no guidance from us.
+
+
