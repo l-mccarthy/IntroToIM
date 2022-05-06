@@ -307,7 +307,9 @@ While the value of `17.5` being multiplied to `pot4` is notably a strange choice
 
 Link to latest sketch: https://editor.p5js.org/l-mccarthy/sketches/Rt37KSam9
 
-## 02/05 Finishing the piano roll display
+## 02/05 Finishing the piano roll p5 display
+
+![image](https://user-images.githubusercontent.com/98512628/167110125-72713c3d-8745-4075-b506-7b764d40c7f0.png)
 
 Link to latest sketch: https://editor.p5js.org/l-mccarthy/sketches/TNRLu8btt
 
