@@ -259,9 +259,19 @@ Link to latest sketch: https://editor.p5js.org/l-mccarthy/sketches/320HEHZOr
 
 ## 29/04 Displaying steps on p5
 
-* Created a class for displaying the step rectangles beneath the piano roll.
-* Challenge was changing the colour when the button was pressed, which was solved by:
-* `if (buttonState % 4 === 0 && i === 0 )`
+While we did have the LEDs to delineate the steps, we think that seeing the same information on a display in p5 will also be helpful. As a result, we created a class for displaying the step rectangles beneath the piano roll. The challenge was changing the colour when the button was pressed, which was solved by incorporating a boolean which checks if the button is pressed. The `displayButtonStep` function is called every time the button state changes.
+
+```
+displayButtonStep(boolean) {
+    if (boolean === true) {
+      fill(63, 229, 0);
+      rect(this.posX, this.posY, this.width, this.height);
+    } else {
+      fill(19, 19, 88);
+      rect(this.posX, this.posY, this.width, this.height);
+    }
+```
+We chose the colour green for the selected step since that is the colour for a fully opened low-pass filter (highest frequency) and a step that is not selected is the colour for a fully closed low-pass filter (lowest frequency).
 * At the moment this is only for this first four steps but we will change this when we get the 6 LEDs on the breadboard, it is most important to know that this aspect is working correctly.
 * Diagrams of what we have completed and we still need to do:
 
@@ -308,3 +318,5 @@ https://user-images.githubusercontent.com/98512628/167035593-40001229-2a80-4b9f-
 This is more of a preliminary user test as our project is not entirely finished, we told the user that we plan to solder and make our circuit more presentable, because the most obvious criticism is the fact that the potentiometers are so small and difficult to turn due to their position on the breadboard (and the many tangled wires). Another aspect that was not yet added, which retrospectively we should have added before this user test, is to fill the menu screen with instructions on how to use the step sequencer, thus we had to explain to the user how the sequencer works and what potentiometer controls what. Ideally, when we later do a final user test, we hope that the user can read the instructions and correctly use our project with no guidance from us.
 
 Furthermore, the program begins to lag and the sounds glitch the longer the program runs, although I am not entirely sure the user noticed this was happening. At some point we will test our project with a better internet connection (i.e. ethernet), since p5 is working on a browser, to see if this is truly the problem. We also noticed that the user was rarely interacting with the display on p5, rather, directing their attention to the potentiometers and the LEDs. I wonder if this is due to the user's lack of music knowledge that they found the display redundant. Or maybe it is because the display only gave details to the outputs, and the inputs themselves were worth more attention. In the end, the user enjoyed testing our project and said it was very fun.
+
+## 06/05 Friday's class
