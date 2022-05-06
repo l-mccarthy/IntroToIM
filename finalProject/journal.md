@@ -259,7 +259,7 @@ Link to latest sketch: https://editor.p5js.org/l-mccarthy/sketches/320HEHZOr
 
 ## 29/04 Displaying steps on p5
 
-While we did have the LEDs to delineate the steps, we think that seeing the same information on a display in p5 will also be helpful. As a result, we created a class for displaying the step rectangles beneath the piano roll. The challenge was changing the colour when the button was pressed, which was solved by incorporating a boolean which checks if the button is pressed. The `displayButtonStep` function is called every time the button state changes.
+While we did have the LEDs to delineate the steps, we think that seeing the same information on a display in p5 will also be helpful. As a result, we created a class for displaying the step rectangles and the selected step beneath the piano roll. The challenge was changing the colour whenever the button was pressed, which was solved by incorporating a boolean in the class which checks if the button is pressed, then a rectangle with a different colour is created. The `displayButtonStep` function is called every time the button state changes.
 
 ```
 displayButtonStep(boolean) {
@@ -271,9 +271,9 @@ displayButtonStep(boolean) {
       rect(this.posX, this.posY, this.width, this.height);
     }
 ```
-We chose the colour green for the selected step since that is the colour for a fully opened low-pass filter (highest frequency) and a step that is not selected is the colour for a fully closed low-pass filter (lowest frequency).
-* At the moment this is only for this first four steps but we will change this when we get the 6 LEDs on the breadboard, it is most important to know that this aspect is working correctly.
-* Diagrams of what we have completed and we still need to do:
+We chose the colour green for the selected step since that is the colour for a fully opened low-pass filter (highest frequency) and a step that is not selected is the colour for a fully closed low-pass filter (lowest frequency). At the moment this is only for this first four steps but we will change this when we get the 8 LEDs on the breadboard, it is most important to know that this aspect is working correctly.
+
+We also ended this session with brainstorm diagrams of what we have completed and what we still need to do:
 
 ![Completed until now](https://user-images.githubusercontent.com/98512628/165952837-6918c979-b383-4e10-a143-b89bc5c759c1.png)
 
@@ -320,3 +320,5 @@ This is more of a preliminary user test as our project is not entirely finished,
 Furthermore, the program begins to lag and the sounds glitch the longer the program runs, although I am not entirely sure the user noticed this was happening. At some point we will test our project with a better internet connection (i.e. ethernet), since p5 is working on a browser, to see if this is truly the problem. We also noticed that the user was rarely interacting with the display on p5, rather, directing their attention to the potentiometers and the LEDs. I wonder if this is due to the user's lack of music knowledge that they found the display redundant. Or maybe it is because the display only gave details to the outputs, and the inputs themselves were worth more attention. In the end, the user enjoyed testing our project and said it was very fun.
 
 ## 06/05 Friday's class
+
+![Menu_Screens](https://user-images.githubusercontent.com/98512628/167106130-7e7d809e-172c-4e26-b6f0-2d7f99704194.png)
