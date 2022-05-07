@@ -309,6 +309,19 @@ Link to latest sketch: https://editor.p5js.org/l-mccarthy/sketches/Rt37KSam9
 
 ## 02/05 Finishing the piano roll p5 display
 
+While we do have the notes class displayed via the `createNotes()` function, the challenging part was to _move_ those notes up and down the piano roll in accordance to the pitch (i.e. the different sample being played). The only way that we formulated this would be possible is by using *a lot* of `if` statements within an encompassing `for` loop. We tried thinking of different ideas to how we can "cheat" the long process but sometimes the first idea is the best, and it was very logical. Basically, one for each step 
+
+```
+for (let i = 0; i < arrayIndexSound.length; i++) {
+    //go through the loop assigning y values
+    //print("i is this value", i)
+    if (i === 0) {
+      if (arrayIndexSound[0] === 0) {
+        posYNote = 465; // position of C note on canvas
+        //print("HELLO, I am IndexSound1 = C", posYNote)
+        arrayPositionYNote[0] = posYNote; // add the value to the list pos[0]
+```
+
 ![image](https://user-images.githubusercontent.com/98512628/167110125-72713c3d-8745-4075-b506-7b764d40c7f0.png)
 
 Finally, we added simple text in the bar at the top of the screen which denoted variables for tempo, frequency, and resonance. We originally wanted tempo to be called "BPM" but converting our potentiometer value for frame rate into a BPM was too complex so instead we opted for words. Moreover, someone unfamiliar with music theory might not know what BPM is, but tempo/speed is something that is universal and therefore a better signifier. So a frame rate of 4, for example, is displayed as "Fast". As for frequency and resonance we just used the values from the potentiometer as they are accurate and even if the user does not know what they mean they can _hear_ the difference when playing with the knobs and deduce that a lower frequency filter essentially "muffles" the sound. It also took us a minute to realise that the reason why other shapes turned grey like the text is because we forgot to include the simple `push` and `pop`.
