@@ -325,4 +325,6 @@ Furthermore, the program begins to lag and the sounds glitch the longer the prog
 
 ## 06/05 Friday's class
 
+This class was more of a reflective session where we went over what we've done and then plan our next and final steps. The good news is everything works! We have figured out the fundamentals for our project and now it's time to make it look good. Additionally, we can add extra steps, as many steps as we want - theoretically - but we decided with 8 steps as that was our original plan and works well with rhythm in music. If we went for something like 6 steps the odd time signature that it creates the possibility of throwing the user off; 8 steps is easier to follow.
+
 ![Menu_Screens](https://user-images.githubusercontent.com/98512628/167106130-7e7d809e-172c-4e26-b6f0-2d7f99704194.png)
