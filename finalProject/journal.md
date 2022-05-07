@@ -309,7 +309,9 @@ Link to latest sketch: https://editor.p5js.org/l-mccarthy/sketches/Rt37KSam9
 
 ## 02/05 Finishing the piano roll p5 display
 
-While we do have the notes class displayed via the `createNotes()` function, the challenging part was to _move_ those notes up and down the piano roll in accordance to the pitch (i.e. the different sample being played). The only way that we formulated this would be possible is by using *a lot* of `if` statements within an encompassing `for` loop. We tried thinking of different ideas to how we can "cheat" the long process but sometimes the first idea is the best, and it was very logical. Basically, one for each step 
+While we do have the notes class displayed via the `createNotes()` function, the challenging part was to _move_ those notes up and down the piano roll in accordance to the pitch (i.e. the different sample being played). The only way that we formulated this would be possible is by using *a lot* of `if` statements within an encompassing `for` loop. We tried thinking of different ideas to how we can "cheat" the long process but sometimes the first idea is the best, and it was the most logical. Basically, the `for` loop takes into account each step and assigns the order to the `i` variable, and a certain value of `i` will dictate which step is getting its pitch changed. And within the `if` statement for each step the code will checck which sample is being played and it will correspond with a certain position on the y-axis for the note. For debugging purposes we added some `print` functions throughout the loop to verify if the statements were working.
+
+The crazy thing was that the code was "working" but it did not work initially because, for whatever reason, we forgot to convert the `pot1` reading into an `int` like all the other potentiometers. And it took us a while to figure out that *that* was our misstep. It is embarrassing to admit that we fell for the same mistake twice!
 
 ```
 for (let i = 0; i < arrayIndexSound.length; i++) {
