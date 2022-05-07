@@ -342,8 +342,12 @@ Furthermore, the program begins to lag and the sounds glitch the longer the prog
 
 This class was more of a reflective session where we went over what we've done and then plan our next and final steps. The good news is everything works! We have figured out the fundamentals for our project and now it's time to make it look good. Additionally, we can add extra steps, as many steps as we want - theoretically - but we decided with 8 steps as that was our original plan and works well with rhythm in music. If we went for something like 6 steps, the subsequent odd time signature creates the possibility of throwing the user off; 8 steps is merely easier to follow.
 
-We plan to solder our circuit soon so we gathered the needed components. Fortunately, our circuit is quite simple: four potentiometers, a button, a 10k resistor, and a bunch of wires. And yes, I purposely did not include the LEDs in this list. We discussed the decision of adding the LEDs or not and we realised that, not only would it be much more work to solder, but it could also throw the user off because both the LEDs and the buttons steps displayed on-screen are for the same purpose, and if we want the user to pay attention to the interface screen then the LEDs is more of a distraction. On the other hand, the LEDs just look really nice! We're not too sure yet to be honest, but it's likely the LEDs will not have a place in our final product.
+The only thing left to do in our p5 code is to finalize the menu screen. And we are planning to make it more ambitious by including multiple screens of instructions with "next" and "previous" buttons. 
 
-
+**Rough sketch of ideas for the updated menu/instruction screens:**
 
 ![Menu_Screens](https://user-images.githubusercontent.com/98512628/167106130-7e7d809e-172c-4e26-b6f0-2d7f99704194.png)
+
+We plan to solder our circuit soon so we gathered the needed components. Fortunately, our circuit is quite simple: four potentiometers, a button, a 10k resistor, and a bunch of wires. And yes, I purposely did not include the LEDs in this list. We discussed the decision of adding the LEDs or not and we realised that, not only would it be much more work to solder, but it could also throw the user off because both the LEDs and the buttons steps displayed on-screen are for the same purpose, and if we want the user to pay attention to the interface screen then the LEDs is more of a distraction. On the other hand, the LEDs just look really nice! We're not too sure yet to be honest, but it's likely the LEDs will not have a place in our final product.
+
+The last thing we did was grab some scrap wood to build our step sequencer casing. While we don't have a concrete visualization of what it would look like, it will likely be a simple box with holes for the potentiometers and one for the button. Potential plans for decorations or whatnot will be an eventual aspect to consider.
