@@ -351,3 +351,12 @@ The only thing left to do in our p5 code is to finalize the menu screen. And we 
 We plan to solder our circuit soon so we gathered the needed components. Fortunately, our circuit is quite simple: four potentiometers, a button, a 10k resistor, and a bunch of wires. And yes, I purposely did not include the LEDs in this list. We discussed the decision of adding the LEDs or not and we realised that, not only would it be much more work to solder, but it could also throw the user off because both the LEDs and the buttons steps displayed on-screen are for the same purpose, and if we want the user to pay attention to the interface screen then the LEDs is more of a distraction. On the other hand, the LEDs just look really nice! We're not too sure yet to be honest, but it's likely the LEDs will not have a place in our final product.
 
 The last thing we did was grab some scrap wood to build our step sequencer casing. While we don't have a concrete visualization of what it would look like, it will likely be a simple box with holes for the potentiometers and one for the button. Potential plans for decorations or whatnot will be an eventual aspect to consider.
+
+## 09/05
+
+* Made 8 steps
+* Started soldering
+* Decided on using switches to silence notes
+* Code how to silence notes
+* Use rect to cover silent note visually
+* Plan on finishing soldering and starting the wooden box next session
