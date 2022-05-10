@@ -358,5 +358,13 @@ The last thing we did was grab some scrap wood to build our step sequencer casin
 * Started soldering
 * Decided on using switches to silence notes
 * Code how to silence notes
+* Tested a soldered switch
 * Use rect to cover silent note visually
 * Plan on finishing soldering and starting the wooden box next session
+
+## 10/05 Tuesday's class
+
+* Finished soldering all the components
+* Drew rough designs for how we will use the wood for fabrication
+* Tested all the potentiometers (one of them did not work)
+* Completed the diagrams, including instructions, for each of the menu screens
