@@ -380,3 +380,5 @@ The last thing we did was grab some scrap wood to build our step sequencer casin
 * Added more switches into Arduino output and p5 code
 * Re-soldered potentiometer 2 as it did not work
 * One of the switches did not work, we don't know why
+
+## 11/05 Finishing final project!
