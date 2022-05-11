@@ -352,19 +352,31 @@ We plan to solder our circuit soon so we gathered the needed components. Fortuna
 
 The last thing we did was grab some scrap wood to build our step sequencer casing. While we don't have a concrete visualization of what it would look like, it will likely be a simple box with holes for the potentiometers and one for the button. Potential plans for decorations or whatnot will be an eventual aspect to consider.
 
-## 09/05
+## 09/05 Soldering components and silencing notes
 
-* Made 8 steps
-* Started soldering
+* Made 8 steps in p5 code
+* Started soldering components
 * Decided on using switches to silence notes
-* Code how to silence notes
-* Tested a soldered switch
-* Use rect to cover silent note visually
+* Coded how to silence notes by adding a sample of no sound which would play
+* Tested a soldered switch, it worked
+* Use a `rect` to cover silent note visually
 * Plan on finishing soldering and starting the wooden box next session
 
 ## 10/05 Tuesday's class
 
 * Finished soldering all the components
 * Drew rough designs for how we will use the wood for fabrication
+* We plan to have a thick wooden base, two wooden planks as support, and thin wooden plank to drill into at the top for the controls
 * Tested all the potentiometers (one of them did not work)
+* Collected 4 knobs for the potentiometers, each with a unique colour
 * Completed the diagrams, including instructions, for each of the menu screens
+
+## 10/05 Penultimate final project session
+
+* Removed the LEDs, began organizing the final breadboard
+* Began cutting wood (32cm long is the most important measurement)
+* Collected all the nuts and washers needed for components
+* Implemented menu screen images in p5
+* Added more switches into Arduino output and p5 code
+* Re-soldered potentiometer 2 as it did not work
+* One of the switches did not work, we don't know why
