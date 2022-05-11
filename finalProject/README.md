@@ -1,5 +1,7 @@
 # 8-Step Sequencer (Liam & Daniel)
 
+![title](https://user-images.githubusercontent.com/98512628/167965208-554f5a73-2589-4c55-bb6d-a2364d9011c5.png)
+
 ![final_design](https://user-images.githubusercontent.com/98512628/167964960-3a12f212-5844-47e4-84f8-23df0ba0ff1a.JPG)
 
 ## Description of our project
