@@ -53,9 +53,11 @@ https://user-images.githubusercontent.com/98512628/167964810-746a2251-2335-4522-
 ## Major discoveries
 
 * We could change frame rate in p5 as a way of changing the speed notes are being played.
-* 
+* Lack of the need of LEDs (due to lack of space + user feedback recieved)
 
 ## Schematic
+
+![schematic](https://user-images.githubusercontent.com/98512628/167968197-a74587eb-4335-4aaf-9cff-dbe73caa766e.jpg)
 
 ## Important links
 
