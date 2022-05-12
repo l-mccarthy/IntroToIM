@@ -12,11 +12,25 @@ In most modern DAW (digital audio workstation) software, the term "piano roll" r
 
 ## Overview of programs (Arduino and p5.js) and circuitry
 
-**p5.js code:**
+**p5.js:**
+* State machine for menu screens and playing the sequencer (to switch between).
+* Preload function loading menu screen images and samples to be played.
+* Starting variables for pitch, tempo, frequency, resonance.
+* Button state machine representing which step you are on.
+* An array for the samples is created so they can be accessed easily.
+* Creating a class for the notes displayed (_many_ `if` statements corresponding to each pitch that can be played).
+* Creating a class for the current step to to be displayed.
+* Recieve potentiometer data from Arduino which controls all the variables apart from the note's number/order in the sequence.
+* Recieve pushbutton data from Arduino which tells p5 to advance to next selected step.
+* Recieve toggle switch data from Arduino to play another sample of silence if turned off.
+* Sound is from p5, samples are uploaded.
 
-**Arduino code:**
-
-**Circuitry:**
+**Arduino:**
+* 4 potentiometers to control pitch, tempo, frequency, and resonance.
+* Each potentiometer is mapped according to what function they would control in be p5.js (i.e `pot3` controls frequency so the range is 100-15000 Hz)
+* 8 toggle switches to represent a step in the sequence that can be turned on or off.
+* 1 pushbutton to advance user to the next step in the sequence.
+* (There were LEDs involved during construction but now have been removed.)
 
 ## Overview of user testing and changes made
 
@@ -38,6 +52,7 @@ https://user-images.githubusercontent.com/98512628/167964810-746a2251-2335-4522-
 
 ## Major discoveries
 
+* We could change frame rate in p5 as a way of changing the speed notes are being played.
 * 
 
 ## Schematic
