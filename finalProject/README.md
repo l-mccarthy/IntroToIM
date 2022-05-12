@@ -53,9 +53,10 @@ https://user-images.githubusercontent.com/98512628/167964810-746a2251-2335-4522-
 
 ## Major discoveries
 
+* We could have one button that would cycle through the steps instead of a button for each step.
 * We could change frame rate in p5 as a way of changing the speed notes are being played.
 * Realising the lack of the need of LEDs in the circuit (due to lack of space on breadboard + user feedback recieved).
-* Using wood goes a long way in making a project look good and _feel_ good when using it.
+* Using wood as building material goes a long way in making a project look good and _feel_ good when using it.
 
 ## Schematic
 
