@@ -352,6 +352,8 @@ We plan to solder our circuit soon so we gathered the needed components. Fortuna
 
 The last thing we did was grab some scrap wood to build our step sequencer casing. While we don't have a concrete visualization of what it would look like, it will likely be a simple box with holes for the potentiometers and one for the button. Potential plans for decorations or whatnot will be an eventual aspect to consider.
 
+### P.S. the journal entries from now on are much shorter due to the stress we were having from the final week of the semester.
+
 ## 09/05 Soldering components and silencing notes
 
 * Made 8 steps in p5 code
@@ -382,3 +384,22 @@ The last thing we did was grab some scrap wood to build our step sequencer casin
 * One of the switches did not work, we don't know why
 
 ## 11/05 Finishing final project!
+
+* Re-soldered faulty switch
+* Finished cutting the wood into 4 planks: one for the base, two for walls, and one thinner one for the cover + display
+* Used a lot of filing and sandpaper to smoothen wood to prevent cutting skin accidentally as well as flattening the parts cut so they can be straight and level
+* Measured and drew lines on the wood for cover to plan where to plave components
+* Used various drillbits for specific holes for the respective component, drilling worked very well with no problems!
+
+![IMG_8898](https://user-images.githubusercontent.com/98512628/168147959-82480353-cae7-41f5-a966-0d41c1781eea.JPG)
+
+* Drilling the various planks together to form a rudimentary where we can slide circuit in and out
+* Attached all components to the cover and then to the breadboard and arduino below
+
+![IMG_8900](https://user-images.githubusercontent.com/98512628/168145930-d8b7e755-d5f5-439c-b036-37a86f7be35b.JPG)
+
+### Final Product:
+
+![IMG_8901](https://user-images.githubusercontent.com/98512628/168148662-80c77e00-ba20-458e-80c1-a7283f54ef0c.JPG)
+
+![IMG_8902](https://user-images.githubusercontent.com/98512628/168148705-ca5a2c02-6c15-482f-83c9-5b2389d6adf3.JPG)
