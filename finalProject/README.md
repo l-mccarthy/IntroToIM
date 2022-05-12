@@ -10,6 +10,16 @@ Daniel and Liam, for the final concept, created an 8 step sequencer, and a step 
 
 In most modern DAW (digital audio workstation) software, the term "piano roll" refers to a graphical display of, and means of editing, MIDI note data; along with entering the pitch, length and velocity of notes manually, instead of recording the output of a device for entering note data, like a keyboard. Our interface in p5.js shows the user, note only what pitch their note is, but what is the frequency of the filter, the resonance of the sound, the tempo the notes are being played, and what note/step you are currently editing. Furthermore, there are switches that can turn and note on our off, allowing the user to create interesting rhythms.
 
+**Relevant links for inspiration/guidance:**
+
+[ARDUINO 8 STEP KEYBOARD SEQUENCER FOR SYNTHESIZERS - LOOK MUM NO COMPUTER](https://www.youtube.com/watch?v=9oGlCfwCoCw)
+
+[LOOK MUM NO COMPUTER - Arduino 8 Step Keyboard Sequencer Project Information](https://www.lookmumnocomputer.com/projects/#/sequencer-keyboard)
+
+[Best Arduino Project - DIY 4 Step Sequencer - Hacktuber](https://www.youtube.com/watch?v=ozSdVL2EzR4)
+
+[Auduino 4-step sequencer - Cassiopeia Ltd](https://cassiopeia.hk/sequencer/)
+
 ## Overview of programs (Arduino and p5.js) and circuitry
 
 **p5.js:**
