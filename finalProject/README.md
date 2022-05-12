@@ -48,12 +48,14 @@ https://user-images.githubusercontent.com/98512628/167964810-746a2251-2335-4522-
 
 ## Major problems
 
-* Two switches ended up not working when testing the final product, depsite testing each switch individually.
+* After around 1 minute of the program running, the sounds start glitching and tempo fluctuates as if there was heavy lag. We asked Jack at the lab and he thought this was because we had the old serial communication method, so we implemented Prof. Aaron's new and updated method but the problem still persisted, which is a shame because the beauty of the sequencer is how the sounds organically morph over time into a new pattern.
+* The second problem was that the morning to present our final product we noticed two switches ended up not working when testing the sequencer, depsite testing each switch individually. Unlike the previous problem, this one can be solved in a simple manner, via replacing the faulty switches with new ones as the error is likely due to a mechanical aspect since the soldering a connections seemed adequate.
 
 ## Major discoveries
 
 * We could change frame rate in p5 as a way of changing the speed notes are being played.
-* Lack of the need of LEDs (due to lack of space + user feedback recieved)
+* Realising the lack of the need of LEDs in the circuit (due to lack of space on breadboard + user feedback recieved).
+* Using wood goes a long way in making a project look good and _feel_ good when using it.
 
 ## Schematic
 
