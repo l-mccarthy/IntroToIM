@@ -60,6 +60,7 @@ https://user-images.githubusercontent.com/98512628/167964810-746a2251-2335-4522-
 
 * After around 1 minute of the program running, the sounds start glitching and tempo fluctuates as if there was heavy lag. We asked Jack at the lab and he thought this was because we had the old serial communication method, so we implemented Prof. Aaron's new and updated method but the problem still persisted, which is a shame because the beauty of the sequencer is how the sounds organically morph over time into a new pattern.
 * The second problem was that the morning to present our final product we noticed two switches ended up not working when testing the sequencer, depsite testing each switch individually. Unlike the previous problem, this one can be solved in a simple manner, via replacing the faulty switches with new ones as the error is likely due to a mechanical aspect since the soldering a connections seemed adequate.
+* RESOLVED: The first potentiometers for frame rate (and the rest) were not reading in p5 because the readings were in string not integers. So of course the frame rate (and the frequency filter) was not changing because the values were treated as text. As a result, we converted the strings to a number value using int() for all the potentiometers that controlled tempo, frequency, and resonance.
 
 ## Major discoveries
 
